@@ -120,15 +120,17 @@ figure {
   #colorlib-aside #colorlib-main-menu ul {
     text-align: center;
     margin: 0;
-    padding: 0; }
+    padding: 0px; }
+
+
     @media screen and (max-width: 768px) {
       #colorlib-aside #colorlib-main-menu ul {
         margin: 0 0 2em 0; } }
     #colorlib-aside #colorlib-main-menu ul li {
-      margin: 0 0 10px 0;
+      margin: 25px 0 10px 0;
       padding: 0;
-      list-style: none;
-      font-size: 12px;
+      list-style: circle;
+      font-size: 14px;
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 1px; }
@@ -438,6 +440,21 @@ body.offcanvas {
   width: 100%;
   height: 600px;
   margin-bottom: 30px; }
+
+  .mapouter {
+    position: relative;
+    text-align: center;
+    height: 450px;
+    width: 600px;
+    padding-left:45px;
+  }
+
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 450px;
+    width: 600px;
+  }
 
 .about-desc h3 {
   font-size: 18px;
