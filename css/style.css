@@ -12,6 +12,7 @@
 *
 * ======================================================= */
 body {
+overflow:hidden;
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -1270,3 +1271,9 @@ body.offcanvas {
     height: inherit !important;
     float: left;
     padding-top: 30px; } }
+	
+	
+#colorlib-aside{
+
+  overflow: hidden
+}
