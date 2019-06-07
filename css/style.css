@@ -13,7 +13,7 @@
 * ======================================================= */
 body {
 
-  font-family: "Quicksand", Arial, sans-serif;
+  font-family: 'Bitter', serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.8;
@@ -23,12 +23,12 @@ body {
       font-size: 16px; } }
 
 a {
-  color: #FFC300;
+  color: #DC143C;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   a:hover, a:active, a:focus {
-    color: #FFC300;
+    color: #DC143C;
     outline: none;
     text-decoration: none !important; }
 
@@ -37,7 +37,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family: "Quicksand", Arial, sans-serif;
+  font-family: 'Bitter', serif;
   font-weight: 400;
   margin: 0 0 30px 0; }
 
@@ -51,22 +51,22 @@ figure {
     margin: 20px auto 0px auto;
     color: #b3b3b3;
     font-style: italic;
-    font-family: "Quicksand", Arial, sans-serif; }
+   font-family: 'Bitter', serif; }
     @media screen and (max-width: 480px) {
       figure figcaption {
         width: 100%; } }
 
 ::-webkit-selection {
   color: #fff;
-  background: #FFC300; }
+  background: #DC143C; }
 
 ::-moz-selection {
   color: #fff;
-  background: #FFC300; }
+  background: #DC143C; }
 
 ::selection {
   color: #fff;
-  background: #FFC300; }
+  background: #DC143C; }
 
 #colorlib-page {
   width: 100%;
@@ -140,7 +140,7 @@ figure {
         text-decoration: none;
         position: relative;
         padding: 10px 0;
-        font-family: "Quicksand", Arial, sans-serif;
+       font-family: 'Bitter', serif;
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s; }
@@ -151,7 +151,7 @@ figure {
           bottom: 7px;
           left: 0;
           right: 0;
-          background-color: #FFC300;
+          background-color: #DC143C;
           visibility: hidden;
           -webkit-transform: scaleX(0);
           -moz-transform: scaleX(0);
@@ -213,7 +213,7 @@ figure {
           #colorlib-aside .colorlib-footer ul li a:hover, #colorlib-aside .colorlib-footer ul li a:active, #colorlib-aside .colorlib-footer ul li a:focus {
             text-decoration: none;
             outline: none;
-            color: #FFC300; }
+            color: #DC143C; }
 
 #colorlib-main {
   width: 80%;
@@ -302,7 +302,7 @@ figure {
           margin: 0;
           padding: 0;
           color: black;
-          font-family: "Quicksand", Arial, sans-serif; }
+         font-family: 'Bitter', serif; }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
           margin-bottom: 20px;
           font-size: 44px;
@@ -316,7 +316,7 @@ figure {
           line-height: 1.5;
           margin-bottom: 30px;
           font-weight: 300;
-          font-family: "Quicksand", Arial, sans-serif; }
+          font-family: 'Bitter', serif; }
           #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 a {
             color: rgba(0, 0, 0, 0.8); }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner .heading-section {
@@ -421,7 +421,7 @@ body.offcanvas {
     width: 60px;
     height: 4px;
     content: '';
-    background: #FFC300; }
+    background: #DC143C; }
   .colorlib-heading span {
     display: block; }
   @media screen and (max-width: 768px) {
@@ -509,9 +509,9 @@ body.offcanvas {
         vertical-align: middle;
         color: #000; }
   .steps:hover i {
-    color: #FFC300 !important; }
+    color: #DC143C!important; }
   .steps.active i {
-    color: #FFC300 !important; }
+    color: #DC143C !important; }
 
 .fancy-collapse-panel .panel-default > .panel-heading {
   padding: 0; }
@@ -617,7 +617,7 @@ body.offcanvas {
     .colorlib-feature .colorlib-icon i {
       display: table-cell;
       vertical-align: middle;
-      color: #FFC300;
+      color: #DC143C;
       font-size: 60px;
       height: 100px; }
       @media screen and (max-width: 1200px) {
@@ -639,7 +639,7 @@ body.offcanvas {
   .colorlib-feature.colorlib-feature-sm .colorlib-text {
     margin-top: 30px; }
   .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
-    color: #FFC300;
+    color: #DC143C;
     font-size: 40px; }
     @media screen and (max-width: 1200px) {
       .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
@@ -873,7 +873,7 @@ body.offcanvas {
       width: 100px;
       height: 100px;
       font-size: 50px;
-      color: #FFC300;
+      color: #DC143C;
       background: #fff;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
@@ -885,7 +885,7 @@ body.offcanvas {
     font-size: 40px;
     display: block;
     color: white;
-    font-family: "Quicksand", Arial, sans-serif;
+    font-family: 'Bitter', serif;
     width: 100%;
     font-weight: 700;
     margin-bottom: .3em; }
@@ -939,11 +939,11 @@ body.offcanvas {
         .colorlib-social li a {
           padding: 10px 8px; } }
       .colorlib-social li a:hover {
-        color: #FFC300; }
+        color: #DC143C; }
       .colorlib-social li a:hover, .colorlib-social li a:active, .colorlib-social li a:focus {
         outline: none;
         text-decoration: none;
-        color: #FFC300; }
+        color: #DC143C; }
 
 #map {
   width: 100%;
@@ -975,24 +975,24 @@ body.offcanvas {
         -ms-border-radius: 2px;
         border-radius: 2px; }
       .pagination li a:hover, .pagination li a:focus {
-        background: #FFC300;
+        background: #DC143C;
         color: #fff;
-        border: 1px solid #FFC300; }
+        border: 1px solid #DC143C; }
       @media screen and (max-width: 768px) {
         .pagination li a {
           padding: 7px 15px; } }
     .pagination li.active a {
-      background: #FFC300;
+      background: #DC143C;
       border: 1px solid #FFC300 !important; }
       .pagination li.active a:hover, .pagination li.active a:focus {
-        background: #FFC300;
+        background: #DC143C;
         color: #fff;
-        border: 1px solid #FFC300 !important; }
+        border: 1px solid #DC143C!important; }
 
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Quicksand", Arial, sans-serif;
+  font-family: 'Bitter', serif;
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
@@ -1017,18 +1017,18 @@ body.offcanvas {
     outline: none !important; }
 
 .btn-primary {
-  background: #FFC300;
+  background: #DC143C;
   color: #fff;
-  border: 2px solid #FFC300; }
+  border: 2px solid #DC143C; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     background: #ffc91a !important;
     border-color: #ffc91a !important; }
   .btn-primary.btn-outline {
     background: transparent;
-    color: #FFC300;
-    border: 2px solid #FFC300; }
+    color: #DC143C;
+    border: 2px solid #DC143C; }
     .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-      background: #FFC300;
+      background: #DC143C;
       color: #fff; }
 
 .btn-success {
@@ -1286,9 +1286,9 @@ body.offcanvas {
   left: 0;
   bottom: 0;
   background:rgba(0,0,0,.5);
-  color: #fff;
+  color: #DC143C;
   text-shadow: 0 -1px 0 rgba(0,0,0,.3);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 
 
@@ -1298,3 +1298,14 @@ body.offcanvas {
 	
 	overflow: hidden;
 }
+
+
+}
+
+
+*{
+
+  font-family: 'Bitter', serif;
+  font-weight: 700;
+}
+
