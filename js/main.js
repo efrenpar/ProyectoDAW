@@ -214,10 +214,10 @@
 		   nav:true,
 		   dots: false,
 		   autoHeight: true,
-		   items: 1,
+		   items: 2,
 		   navText: [
-		      "<i class='icon-arrow-left3 owl-direction'></i>",
-		      "<i class='icon-arrow-right3 owl-direction'></i>"
+		    
+		      
 	     	]
 		})
 	};
