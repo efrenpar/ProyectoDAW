@@ -1,9 +1,8 @@
 @font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+	src: url(./fonts/Bitter/Bitter-Regular.ttf )
+	font-family: bitter;
+	font-weight: 700;
+  }
 
 /* =======================================================
 *
@@ -174,7 +173,7 @@ figure {
             -o-transform: scaleX(1);
             transform: scaleX(1); }
       #colorlib-aside #colorlib-main-menu ul li.colorlib-active a {
-        color: #FFC300; }
+        color: #DC143C; }
         #colorlib-aside #colorlib-main-menu ul li.colorlib-active a:after {
           visibility: visible;
           -webkit-transform: scaleX(1);
@@ -271,7 +270,7 @@ figure {
           #colorlib-hero .flexslider .flex-control-nav li a.flex-active {
             cursor: pointer;
             background: transparent;
-            border: 2px solid #FFC300; }
+            border: 2px solid #DC143C; }
     #colorlib-hero .flexslider .flex-direction-nav {
       display: none; }
     #colorlib-hero .flexslider .slider-text {
@@ -290,7 +289,7 @@ figure {
           bottom: 0;
           right: -15px;
           padding: 30px;
-          background: #FFC300; }
+          background: #DC143C; }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .desc {
               right: 0;
@@ -983,7 +982,7 @@ body.offcanvas {
           padding: 7px 15px; } }
     .pagination li.active a {
       background: #DC143C;
-      border: 1px solid #FFC300 !important; }
+      border: 1px solid #DC143C !important; }
       .pagination li.active a:hover, .pagination li.active a:focus {
         background: #DC143C;
         color: #fff;
@@ -1021,8 +1020,8 @@ body.offcanvas {
   color: #fff;
   border: 2px solid #DC143C; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background: #ffc91a !important;
-    border-color: #ffc91a !important; }
+    background: #cc0000 !important;
+    border-color: #cc0000 !important; }
   .btn-primary.btn-outline {
     background: transparent;
     color: #DC143C;
@@ -1294,18 +1293,16 @@ body.offcanvas {
 
 }
 
-#colorlib-hero{
+
+
+
+#colorlib-main{
 	
 	overflow: hidden;
 }
 
 
-}
 
 
-*{
 
-  font-family: 'Bitter', serif;
-  font-weight: 700;
-}
 
