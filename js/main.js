@@ -148,7 +148,9 @@
 	  	$('#colorlib-hero .flexslider').flexslider({
 			animation: "fade",
 			slideshowSpeed: 5000,
-			directionNav: true,
+			//directionNav: true,
+            touch: true,
+            pauseOnHover:false
 			
 	  	});
 
