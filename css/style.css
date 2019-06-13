@@ -215,6 +215,9 @@ figure {
             color: #DC143C; }
 
 #colorlib-main {
+  overflow:hidden;
+  margin:0;
+  padding:0;  
   width: 80%;
   float: right;
   -webkit-transition: 0.5s;
@@ -248,11 +251,12 @@ figure {
         min-height: 400px;
         position: relative; }
     #colorlib-hero .flexslider .flex-control-nav {
-      bottom: 20px;
+      /*bottom: 20px;
       z-index: 1000;
       left: 20px;
       float: left;
-      width: auto; }
+      width: auto; */
+	  display:none;}
       @media screen and (max-width: 768px) {
         #colorlib-hero .flexslider .flex-control-nav {
           right: 20px;
@@ -269,10 +273,10 @@ figure {
           cursor: pointer; }
           #colorlib-hero .flexslider .flex-control-nav li a.flex-active {
             cursor: pointer;
-            background: transparent;
+         /   background: transparent;
             border: 2px solid #DC143C; }
     #colorlib-hero .flexslider .flex-direction-nav {
-      display: none; }
+      /*display: none;*/ }
     #colorlib-hero .flexslider .slider-text {
       display: table;
       opacity: 0;
@@ -1294,14 +1298,15 @@ body.offcanvas {
 }
 
 
-
+/*
 
 #colorlib-main{
-	
+	margin:0;
+	padding:0;
 	overflow: hidden;
 }
 
-
+*/
 
 
 
