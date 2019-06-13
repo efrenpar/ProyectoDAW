@@ -267,9 +267,11 @@
    .flex-direction-nav .flex-prev {
      opacity: 1;
      left: 10px;
+	 z-index: -1;
    }
    .flex-direction-nav .flex-next {
      opacity: 1;
      right: 10px;
+	 z-index: -1;
    }
  }
