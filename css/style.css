@@ -28,7 +28,8 @@ a {
   -o-transition: 0.5s;
   transition: 0.5s; }
   a:hover, a:active, a:focus {
-    color: #DC143C;
+    font-weight: bold;
+    color: #cc0000;
     outline: none;
     text-decoration: none !important; }
 
@@ -99,6 +100,10 @@ figure {
     padding: 0px 0px 0px 80px;
     letter-spacing: 2px;
   }
+
+.image-center{
+  text-align: center;
+}
 
 .formato{
   font-weight: bold;
@@ -248,9 +253,9 @@ figure {
             color: #DC143C; }
 
 #colorlib-main {
-  overflow:hidden;
+  overflow:auto;
   margin:0;
-  padding:0;  
+  padding:0;
   width: 80%;
   float: right;
   -webkit-transition: 0.5s;
@@ -268,7 +273,7 @@ figure {
   background: #fff url(../images/loader.gif) no-repeat center center;
   width: 100%;
   float: left;
-  margin-bottom: 10em;
+  margin-bottom:0px;
   clear: both; }
   #colorlib-hero .flexslider {
     border: none;
@@ -284,11 +289,11 @@ figure {
         min-height: 400px;
         position: relative; }
     #colorlib-hero .flexslider .flex-control-nav {
-      /*bottom: 20px;
+      bottom: 20px;
       z-index: 1000;
       left: 20px;
       float: left;
-      width: auto; */
+      width: auto;
 	  display:none;}
       @media screen and (max-width: 768px) {
         #colorlib-hero .flexslider .flex-control-nav {
@@ -298,7 +303,7 @@ figure {
         display: block;
         margin-bottom: 10px; }
         #colorlib-hero .flexslider .flex-control-nav li a {
-          background: rgba(255, 255, 255, 0.5);
+          background:#DC143C;
           -webkit-box-shadow: none;
           box-shadow: none;
           width: 12px;
@@ -306,8 +311,8 @@ figure {
           cursor: pointer; }
           #colorlib-hero .flexslider .flex-control-nav li a.flex-active {
             cursor: pointer;
-         /   background: transparent;
-            border: 2px solid #DC143C; }
+            background: transparent;
+            border: 5px solid #DC143C; }
     #colorlib-hero .flexslider .flex-direction-nav {
       display: block; 
 	  z-index: 1000
@@ -442,7 +447,13 @@ body.offcanvas {
       }
     
     }
+.img_small{
+padding: 30px 60px 0px 40px;
 
+}
+.section_blog{
+  text-align: center;
+}
 .about-img,
 .about-img-2,
 .services-img {
@@ -495,12 +506,19 @@ body.offcanvas {
     padding-left:45px;
   }
 
-  .gmap_canvas {
-    overflow: hidden;
-    background: none !important;
-    height: 450px;
-    width: 600px;
-  }
+  .map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:90%;
+    width:100%;
+    position:absolute;
+}
 
 .about-desc h3 {
   font-size: 18px;
@@ -1341,16 +1359,6 @@ body.offcanvas {
 
 }
 
-
-/*
-
-#colorlib-main{
-	margin:0;
-	padding:0;
-	overflow: hidden;
-}
-
-*/
 
 
 
