@@ -1304,7 +1304,7 @@ padding: 30px 60px 0px 40px;
       opacity: 1;
       visibility: visible;
       background-color: #dc143c!important;
-	  opacity: 0.5 !important;
+	  
 	  border-radius: 5px;
 	  margin: 10px;
 	  padding: 10px;
@@ -1379,7 +1379,19 @@ padding: 30px 60px 0px 40px;
 
 }
 
+ .wrap { 
+ display:flex;
+ align-items:center;
+ text-align:center !important;
+padding:0 !important;
+margin: 10px;
+}
 
+.wrap:nth-child(2){
+	
+	margin: 20px !important;
+	padding:0 !important;
+}
 
 
 
