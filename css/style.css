@@ -20,7 +20,11 @@ body {
   color: rgba(0, 0, 0, 0.7); }
   @media screen and (max-width: 992px) {
     body {
-      font-size: 16px; } }
+      font-size: 16px;
+      
+    } 
+    .large{font-size: 3rem}
+  }
 
 a {
   color: #DC143C;
@@ -108,7 +112,9 @@ figure {
 .image-center{
   text-align: center;
 }
-
+.parrafo{
+  text-align: justify;
+}
 .formato{
   font-weight: bold;
   text-align: center;
@@ -137,7 +143,9 @@ figure {
 
   @media screen and (max-width: 1200px) {
     #colorlib-aside {
-      width: 30%; } }
+      width: 30%; }
+      .large{font-size: 3rem}
+    }
   @media screen and (max-width: 768px) {
     #colorlib-aside {
       width: 270px;
@@ -157,7 +165,10 @@ figure {
     width: 100%; }
     @media screen and (max-width: 768px) {
       #colorlib-aside #colorlib-logo {
-        margin-bottom: 1em; } }
+        margin-bottom: 1em; } 
+      
+        .large{font-size: 3rem}
+      }
     #colorlib-aside #colorlib-logo a {
       display: block;
       text-align: center;
@@ -169,10 +180,15 @@ figure {
     margin: 0;
     padding: 0px; }
 
-
+.large{
+  font-size: 4rem
+}
     @media screen and (max-width: 768px) {
     #colorlib-aside #colorlib-main-menu ul {
-        margin: 0 0 2em 0; } }
+        margin: 0 0 2em 0; } 
+      
+        .large{font-size: 3rem}
+      }
     #colorlib-aside #colorlib-main-menu ul li {
       margin: 25px 0 10px 0;
       padding: 0;
@@ -275,7 +291,9 @@ figure {
   transition: 0.5s; }
   @media screen and (max-width: 1200px) {
     #colorlib-main {
-      width: 70%; } }
+      width: 70%; } 
+    .large{font-size: 3rem}
+    }
   @media screen and (max-width: 768px) {
     #colorlib-main {
       width: 100%; } }
@@ -465,6 +483,7 @@ padding: 30px 60px 0px 40px;
 }
 .section_blog{
   text-align: center;
+  align-content: center;
 }
 .about-img,
 .about-img-2,
@@ -545,13 +564,12 @@ padding: 30px 60px 0px 40px;
 .steps {
   display: block;
   position: relative; }
-  .steps h3 {
-    font-weight: 400;
+  .steps h5 {
     margin-bottom: 20px;
     color: rgba(0, 0, 0, 0.7);
     font-size: 14px;
-    letter-spacing: 3px;
-    line-height: 1.5;
+    font-weight: bold;
+    line-height: 2;
     text-transform: uppercase; }
   .steps:before {
     position: absolute;
@@ -559,7 +577,7 @@ padding: 30px 60px 0px 40px;
     left: 0;
     right: 0;
     content: '';
-    width: 100%;
+    width: 80%;
     height: 1px;
     background: #e6e6e6;
     z-index: -1; }
@@ -664,7 +682,12 @@ padding: 30px 60px 0px 40px;
       line-height: 1.5;
       margin-bottom: 0;
       text-transform: uppercase; }
-
+      .icon-menu{
+        display: table-cell;
+        vertical-align: middle;
+        color: #DC143C;
+        font-size: 60px;
+        height: 100px; }
 .move-bottom {
   margin-top: 100px; }
   @media screen and (max-width: 768px) {
