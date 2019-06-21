@@ -36,6 +36,7 @@
 	<link rel="stylesheet" href="css/flexslider.css">
 	<!-- Flaticons  -->
 	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- Owl Carousel -->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -58,11 +59,18 @@
 			<h1 id="colorlib-logo"><a href="index.html">MAN GING ART GALLERY</a></h1>
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="work.html">Artistas</a></li>
-					<li><a href="blog.html">Eventos</a></li>
-					<li class="colorlib-active"><a href="about.html">Nosotros</a></li>
-					<li><a href="contact.html">Contacto</a></li>
+					<li> <a href="index.html" data-toggle="tooltip" data-placement="right" title="INICIO"><i
+								class="large material-icons">home</i></a></li>
+					<li><a href="work.html" data-toggle="tooltip" data-placement="right" title="ARTISTAS"><i
+								class="large material-icons">palette</i></a></li>
+					<li><a href="blog.html" data-toggle="tooltip" data-placement="right" title="EVENTOS"><i
+								class="large material-icons">date_range</i></a></li>
+					<li class="colorlib-active"><a href="about.html" data-toggle="tooltip" data-placement="right"
+							title="NOSOTROS"><i class="large material-icons">info</i></a></li>
+					<li><a href="contact.html" data-toggle="tooltip" data-placement="right" title="CONTACTO"><i
+								class="large material-icons">contact_mail</i></a></li>
+					<li> <a href="contact.html" data-toggle="tooltip" data-placement="right" title="ADMIN"><i
+								class="large material-icons">person_pin</i></a></li>
 				</ul>
 			</nav>
 
@@ -93,61 +101,59 @@
 			<div class="colorlib-about">
 				<div class="colorlib-narrow-content">
 					<div class="row row-bottom-padded-md">
-						<div class="col-md-6">
+						<div class="col-md-7">
 							<span class="heading-meta">Nosotros</span>
-							<h2 class="colorlib-heading">Quienes somos</h2>
-							
-								
-								
-							<div class="about-img animate-box" data-animate-effect="fadeInLeft"
-								style="background-image: url(images/pintor.jpg);">
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<h2 class="colorlib-heading">Historia</h2>
 							<div class="about-desc">
-							
-								<p>Man Ging Art Gallery se fundó en Guayaquil (1995) por Simón Man Ging Vergara posee
+
+								<p class="parrafo">Man Ging Art Gallery se fundó en Guayaquil (1995) por Simón Man Ging
+									Vergara posee
 									una edificación diseñada con los conceptos arquitectónicos-culturales, en donde su
 									sala de exposición tiene esculturas majestuosas como parte de su infraestructura.
 								</p>
-							
-								<p>Su interés especial es la búsqueda de la calidad en la obra dirigida a la difusión de
+
+								<p class="parrafo">Su interés especial es la búsqueda de la calidad en la obra dirigida
+									a la difusión de
 									maestros y artistas plásticos ecuatorianos. Desde sus inicios realiza programas
 									anuales de muestras individuales y colectivas</p>
 							</div>
+
+
 							<div class="row padding">
 								<div class="col-md-4 no-gutters animate-box" data-animate-effect="fadeInLeft">
 									<a href="#" class="steps active">
 										<p class="icon"><span><i class="icon-check"></i></span></p>
-										<h3>Certificados<br>de Autenticidad</h3>
+										<h5>Certificados de Autenticidad</h3>
 									</a>
 								</div>
 								<div class="col-md-4 no-gutters animate-box" data-animate-effect="fadeInLeft">
 									<a href="#" class="steps">
 										<p class="icon"><span><i class="icon-check"></i></span></p>
-										<h3>Envio <br>a Domicilio</h3>
+										<h5>Envio a Domicilio</h3>
 									</a>
 								</div>
 								<div class="col-md-4 no-gutters animate-box" data-animate-effect="fadeInLeft">
 									<a href="#" class="steps">
 										<p class="icon"><span><i class="icon-check"></i></span></p>
-										<h3>Asesoriamiento <br>Personlizado</h3>
+										<h5>Asesoriamiento Personalizado</h3>
 									</a>
 								</div>
-
-								<img class="img_small" src="images/galeria.jpg"> </img>
 
 							</div>
+
 						</div>
+						<div class="col-md-5">
+								<div class="row">
+										<div class="card" style="width: 18rem;">
+												<img src="images/pintor.jpg" class="card-img-top" alt="...">
+											  </div>
+									</div>
+								</div>
+
 					</div>
+
 					<div class="row">
-						<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
-							<h2 class="colorlib-heading">Historia</h2>
-							<p>Man Ging Art Gallery se fundó en Guayaquil (1995) por Simón Man Ging Vergara posee una
-								edificación diseñada con los conceptos arquitectónicos-culturales, en donde su sala de
-								exposición tiene esculturas majestuosas como parte de su infraestructura.</p>
-						</div>
-						<div class="col-md-8 animate-box" data-animate-effect="fadeInRight">
+						<div class="col-md-7 animate-box" data-animate-effect="fadeInRight">
 							<div class="fancy-collapse-panel">
 								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 									<div class="panel panel-default">
@@ -213,9 +219,17 @@
 								</div>
 							</div>
 						</div>
+						<div class="col-md-5">
+							<div class="row">
+									<div class="card" style="width: 18rem;">
+											<img src="images/galeria.jpg" class="card-img-top" alt="...">
+										  </div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
+			
 
 
 			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);"
@@ -253,58 +267,58 @@
 				</div>
 			</div>
 
-			<section class="ftco-section section_blog">
+			<section class="section_blog">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-4 col-lg-3 ftco-animate">
+						<div class="col-md-4 col-lg-4">
 							<div class="staff">
 								<img src="images/avatar.png" width="100" height="100" />
 								<div class="text pt-4">
 									<h3><a href="#">David Neira</a></h3>
 									<span class="position mb-2">Founder, Photographer</span>
 									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-								
-											<a href="https://www.facebook.com/ManGing-Art-Gallery-435173843248942/"
-													target="_blank"><i class="icon-facebook2"></i></a>
-											<a href="https://twitter.com/galeriamanging" target="_blank"><i
-														class="icon-twitter2"></i></a>
-											<a href="https://www.instagram.com/galeriadeartemanging/"
-													target="_blank"><i class="icon-instagram"></i></a>
+
+									<a href="https://www.facebook.com/ManGing-Art-Gallery-435173843248942/"
+										target="_blank"><i class="icon-facebook2"></i></a>
+									<a href="https://twitter.com/galeriamanging" target="_blank"><i
+											class="icon-twitter2"></i></a>
+									<a href="https://www.instagram.com/galeriadeartemanging/" target="_blank"><i
+											class="icon-instagram"></i></a>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 col-lg-3 ftco-animate">
+						<div class="col-md-4 col-lg-4">
 							<div class="staff">
 								<img src="images/avatar3.png" width="100" height="100" />
 								<div class="text pt-4">
 									<h3><a href="#">Francisca Man Ging</a></h3>
 									<span class="position mb-2">Photo Specialists</span>
 									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-									
-										
-											<a href="https://www.facebook.com/ManGing-Art-Gallery-435173843248942/"
-													target="_blank"><i class="icon-facebook2"></i></a>
-											<a href="https://twitter.com/galeriamanging" target="_blank"><i
-														class="icon-twitter2"></i></a>
-											<a href="https://www.instagram.com/galeriadeartemanging/"
-													target="_blank"><i class="icon-instagram"></i></a>
-									
+
+
+									<a href="https://www.facebook.com/ManGing-Art-Gallery-435173843248942/"
+										target="_blank"><i class="icon-facebook2"></i></a>
+									<a href="https://twitter.com/galeriamanging" target="_blank"><i
+											class="icon-twitter2"></i></a>
+									<a href="https://www.instagram.com/galeriadeartemanging/" target="_blank"><i
+											class="icon-instagram"></i></a>
+
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 col-lg-3 ftco-animate">
+						<div class="col-md-4 col-lg-4">
 							<div class="staff">
 								<img src="images/avatar.png" width="100" height="100" />
 								<div class="text pt-4">
 									<h3><a href="#">Efrén Parra</a></h3>
 									<span class="position mb-2">Photographer</span>
 									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-											<a href="https://www.facebook.com/ManGing-Art-Gallery-435173843248942/"
-													target="_blank"><i class="icon-facebook2"></i></a>
-											<a href="https://twitter.com/galeriamanging" target="_blank"><i
-														class="icon-twitter2"></i></a>
-											<a href="https://www.instagram.com/galeriadeartemanging/"
-													target="_blank"><i class="icon-instagram"></i></a>
+									<a href="https://www.facebook.com/ManGing-Art-Gallery-435173843248942/"
+										target="_blank"><i class="icon-facebook2"></i></a>
+									<a href="https://twitter.com/galeriamanging" target="_blank"><i
+											class="icon-twitter2"></i></a>
+									<a href="https://www.instagram.com/galeriadeartemanging/" target="_blank"><i
+											class="icon-instagram"></i></a>
 								</div>
 							</div>
 						</div>
