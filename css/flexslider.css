@@ -123,7 +123,7 @@
    opacity: 0;
    cursor: pointer;
    color: #cc0000;
-   text-shadow: 1px 1px 0 #cc0000;
+   text-shadow: 1px 1px 0 #ffffff;
    -webkit-transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
    -ms-transition: all 0.3s ease-in-out;
@@ -136,7 +136,7 @@
    display: inline-block;
    content: '\f001';
    color: #cc0000;
-   text-shadow: 1px 1px 0 #cc0000;
+   text-shadow: 1px 1px 0 #ffffff;
  }
  .flex-direction-nav a.flex-next:before {
    content: '\f002';
@@ -149,14 +149,14 @@
    text-align: right;
  }
  .flexslider:hover .flex-direction-nav .flex-prev {
-   opacity: 0.7;
+   opacity: 0.9;
    left: 10px;
  }
  .flexslider:hover .flex-direction-nav .flex-prev:hover {
    opacity: 1;
  }
  .flexslider:hover .flex-direction-nav .flex-next {
-   opacity: 0.7;
+   opacity: 0.9;
    right: 10px;
  }
  .flexslider:hover .flex-direction-nav .flex-next:hover {

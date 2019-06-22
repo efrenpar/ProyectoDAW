@@ -108,9 +108,19 @@ figure {
   }
   
 
+.img1-about{
+  width: 100%;
+  height: auto;
+  padding-top: 60px;
+}
 
-.image-center{
-  text-align: center;
+.img2-about{
+  width: 100%;
+  height: auto;
+}
+
+.block-about{
+  padding-top: 35px;
 }
 .parrafo{
   text-align: justify;
@@ -128,7 +138,7 @@ figure {
     text-decoration: none;
     color:black;
     font-weight: bold;
-	color: #000000;
+	  color: #000000;
 	
   }
 
@@ -238,7 +248,8 @@ figure {
 
 
       #colorlib-aside #colorlib-main-menu ul li.colorlib-active a {
-        color: #DC143C; }
+        color: #DC143C;
+      font-weight: bold; }
         
         #colorlib-aside #colorlib-main-menu ul li.colorlib-active a:after {
           visibility: visible;

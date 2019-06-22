@@ -42,6 +42,7 @@
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+	<link href="css/login.css" rel="stylesheet" />
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -59,18 +60,13 @@
 			<h1 id="colorlib-logo"><a href="index.html">MAN GING ART GALLERY</a></h1>
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
-					<li> <a href="index.html" data-toggle="tooltip" data-placement="right"
-							title="INICIO"><i class="large material-icons">home</i></a></li>
-					<li class="colorlib-active"><a href="work.html" data-toggle="tooltip" data-placement="right" title="ARTISTAS"><i
-								class="large material-icons">palette</i></a></li>
-					<li ><a href="blog.html" data-toggle="tooltip" data-placement="right" title="EVENTOS"><i
-								class="large material-icons">date_range</i></a></li>
-					<li><a href="about.html" data-toggle="tooltip" data-placement="right" title="NOSOTROS"><i
-								class="large material-icons">info</i></a></li>
-					<li><a href="contact.html" data-toggle="tooltip" data-placement="right" title="CONTACTO"><i
-								class="large material-icons">contact_mail</i></a></li>
-					<li> <a href="contact.html" data-toggle="tooltip" data-placement="right" title="ADMIN"><i
-								class="large material-icons">person_pin</i></a></li>
+					<li><a href="index.html">Inicio</a></li>
+					<li class="colorlib-active"><a href="work.html">Artistas</a></li>
+					<li><a href="blog.html">Eventos</a></li>
+					<li><a href="about.html">Nosotros</a></li>
+					<li><a href="contact.html">Contacto</a></li>
+					<li><a data-toggle="modal" href="javascript:void(0)"
+						onclick="openLoginModal();">Administración</a></li>
 				</ul>
 			</nav>
 
@@ -151,51 +147,51 @@
 								</div>
 
 							</div>
-
+							
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="project" style="background-image: url(images/artista2.jpeg);">
-									<div class="desc">
-										<div class="con">
-											<h3><a href="work.html">Enrique Tábara</a></h3>
-											<span>Nacimiento: 6 de julio de 1919; Quito, Ecuador </span>
-											<span>Fallecimiento: 10 de marzo de 1999; Baltimore, United
-												States </span>
-											<span>Nacionalidad: Ecuatoriana</span>
-											<span>Movimiento: Expresionismo </span>
-											<span>Campo: pintura, escultura</span>
-											<p class="icon">
-												<span><a href="#"><i class="icon-eye"></i> Obras</a></span>
-												<span><a href="#"><i class="icon-heart"></i> 100</a></span>
-												<span><a href="#"><i class="icon-share3"></i> 49</a></span>
-											</p>
+									<div class="project" style="background-image: url(images/artista2.jpeg);">
+										<div class="desc">
+											<div class="con">
+												<h3><a href="work.html">Enrique Tábara</a></h3>
+												<span>Nacimiento: 6 de julio de 1919; Quito, Ecuador </span>
+												<span>Fallecimiento: 10 de marzo de 1999; Baltimore, United
+													States </span>
+												<span>Nacionalidad: Ecuatoriana</span>
+												<span>Movimiento: Expresionismo </span>
+												<span>Campo: pintura, escultura</span>
+												<p class="icon">
+													<span><a href="#"><i class="icon-eye"></i> Obras</a></span>
+													<span><a href="#"><i class="icon-heart"></i> 100</a></span>
+													<span><a href="#"><i class="icon-share3"></i> 49</a></span>
+												</p>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-
-
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="project" style="background-image: url(images/artista1.jpg);">
-									<div class="desc">
-										<div class="con">
-											<h3><a href="work.html">Oswaldo Guayasamín</a></h3>
-											<span>Nacimiento: 6 de julio de 1919; Quito, Ecuador </span>
-											<span>Fallecimiento: 10 de marzo de 1999; Baltimore, United
-												States </span>
-											<span>Nacionalidad: Ecuatoriana</span>
-											<span>Movimiento: Expresionismo </span>
-											<span>Campo: pintura, escultura</span>
-											<p class="icon">
-												<span><a href="#"><i class="icon-eye"></i> Obras</a></span>
-												<span><a href="#"><i class="icon-heart"></i> 100</a></span>
-												<span><a href="#"><i class="icon-share3"></i> 49</a></span>
-											</p>
+								
+								
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+										<div class="project" style="background-image: url(images/artista1.jpg);">
+											<div class="desc">
+												<div class="con">
+													<h3><a href="work.html">Oswaldo Guayasamín</a></h3>
+													<span>Nacimiento: 6 de julio de 1919; Quito, Ecuador </span>
+													<span>Fallecimiento: 10 de marzo de 1999; Baltimore, United
+														States </span>
+													<span>Nacionalidad: Ecuatoriana</span>
+													<span>Movimiento: Expresionismo </span>
+													<span>Campo: pintura, escultura</span>
+													<p class="icon">
+														<span><a href="#"><i class="icon-eye"></i> Obras</a></span>
+														<span><a href="#"><i class="icon-heart"></i> 100</a></span>
+														<span><a href="#"><i class="icon-share3"></i> 49</a></span>
+													</p>
+												</div>
+											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-
-
+									
+									
 						</div>
 						<div class="row">
 							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
@@ -222,8 +218,7 @@
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
 								data-animate-effect="fadeInLeft">
-								<p class="colorlib-lead">Descubre y aprende sobre los mejores artistas Ecuatorianos con
-									nosotros.</p>
+								<p class="colorlib-lead">Descubre y aprende sobre los mejores artistas Ecuatorianos con nosotros.</p>
 								<p><a href="#" class="btn btn-primary btn-learn">Enviar mensaje</a></p>
 							</div>
 
@@ -232,6 +227,10 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="modal fade login" id="loginModal">
+	
+			</div>
 
 		<!-- jQuery -->
 		<script src="js/jquery.min.js"></script>
@@ -253,6 +252,7 @@
 
 		<!-- MAIN JS -->
 		<script src="js/main.js"></script>
+		<script src="js/login.js"></script>
 
 </body>
 
