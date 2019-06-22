@@ -25,6 +25,7 @@
 		}
 	};
 
+
 	var fullHeight = function() {
 
 		if ( !isMobile.any() ) {

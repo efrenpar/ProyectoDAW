@@ -65,8 +65,8 @@
 					<li><a href="blog.html">Eventos</a></li>
 					<li><a href="about.html">Nosotros</a></li>
 					<li><a href="contact.html">Contacto</a></li>
-					<li><a data-toggle="modal" href="javascript:void(0)"
-						onclick="openLoginModal();">Administración</a></li>
+					<li><a data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Administración</a>
+					</li>
 				</ul>
 			</nav>
 
@@ -96,22 +96,14 @@
 
 			<div class="colorlib-work">
 
-				<aside id="menu-horizontal">
-					<ul class="nav nav-pills">
-						<li class="nav-item">
-							<a class="nav-link active" href="#">Todos</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Nacionales</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Extranjeros</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Top 5</a>
-						</li>
-					</ul>
-				</aside>
+				<div class="topnav">
+					<a class="active" href="#home">Todos</a>
+					<a href="#about">Nacionales</a>
+					<a href="#contact">Internacionales</a>
+					<input type="text" placeholder="Buscar..">
+					<button class="btn-primary" type="submit"><i class="small material-icons">search</i></button>
+				</div>
+
 
 				<div class="colorlib-narrow-content">
 					<div class="row">
@@ -121,8 +113,6 @@
 							<h2 class="colorlib-heading">Conoce más acerca de ellos</h2>
 						</div>
 					</div>
-
-
 
 					<div class="row row-bottom-padded-md">
 						<div>
@@ -147,51 +137,51 @@
 								</div>
 
 							</div>
-							
+
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-									<div class="project" style="background-image: url(images/artista2.jpeg);">
-										<div class="desc">
-											<div class="con">
-												<h3><a href="work.html">Enrique Tábara</a></h3>
-												<span>Nacimiento: 6 de julio de 1919; Quito, Ecuador </span>
-												<span>Fallecimiento: 10 de marzo de 1999; Baltimore, United
-													States </span>
-												<span>Nacionalidad: Ecuatoriana</span>
-												<span>Movimiento: Expresionismo </span>
-												<span>Campo: pintura, escultura</span>
-												<p class="icon">
-													<span><a href="#"><i class="icon-eye"></i> Obras</a></span>
-													<span><a href="#"><i class="icon-heart"></i> 100</a></span>
-													<span><a href="#"><i class="icon-share3"></i> 49</a></span>
-												</p>
-											</div>
+								<div class="project" style="background-image: url(images/artista2.jpeg);">
+									<div class="desc">
+										<div class="con">
+											<h3><a href="work.html">Enrique Tábara</a></h3>
+											<span>Nacimiento: 6 de julio de 1919; Quito, Ecuador </span>
+											<span>Fallecimiento: 10 de marzo de 1999; Baltimore, United
+												States </span>
+											<span>Nacionalidad: Ecuatoriana</span>
+											<span>Movimiento: Expresionismo </span>
+											<span>Campo: pintura, escultura</span>
+											<p class="icon">
+												<span><a href="#"><i class="icon-eye"></i> Obras</a></span>
+												<span><a href="#"><i class="icon-heart"></i> 100</a></span>
+												<span><a href="#"><i class="icon-share3"></i> 49</a></span>
+											</p>
 										</div>
 									</div>
 								</div>
-								
-								
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-										<div class="project" style="background-image: url(images/artista1.jpg);">
-											<div class="desc">
-												<div class="con">
-													<h3><a href="work.html">Oswaldo Guayasamín</a></h3>
-													<span>Nacimiento: 6 de julio de 1919; Quito, Ecuador </span>
-													<span>Fallecimiento: 10 de marzo de 1999; Baltimore, United
-														States </span>
-													<span>Nacionalidad: Ecuatoriana</span>
-													<span>Movimiento: Expresionismo </span>
-													<span>Campo: pintura, escultura</span>
-													<p class="icon">
-														<span><a href="#"><i class="icon-eye"></i> Obras</a></span>
-														<span><a href="#"><i class="icon-heart"></i> 100</a></span>
-														<span><a href="#"><i class="icon-share3"></i> 49</a></span>
-													</p>
-												</div>
-											</div>
+							</div>
+
+
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="project" style="background-image: url(images/artista1.jpg);">
+									<div class="desc">
+										<div class="con">
+											<h3><a href="work.html">Oswaldo Guayasamín</a></h3>
+											<span>Nacimiento: 6 de julio de 1919; Quito, Ecuador </span>
+											<span>Fallecimiento: 10 de marzo de 1999; Baltimore, United
+												States </span>
+											<span>Nacionalidad: Ecuatoriana</span>
+											<span>Movimiento: Expresionismo </span>
+											<span>Campo: pintura, escultura</span>
+											<p class="icon">
+												<span><a href="#"><i class="icon-eye"></i> Obras</a></span>
+												<span><a href="#"><i class="icon-heart"></i> 100</a></span>
+												<span><a href="#"><i class="icon-share3"></i> 49</a></span>
+											</p>
 										</div>
 									</div>
-									
-									
+								</div>
+							</div>
+
+
 						</div>
 						<div class="row">
 							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
@@ -218,19 +208,20 @@
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
 								data-animate-effect="fadeInLeft">
-								<p class="colorlib-lead">Descubre y aprende sobre los mejores artistas Ecuatorianos con nosotros.</p>
+								<p class="colorlib-lead">Descubre y aprende sobre los mejores artistas Ecuatorianos con
+									nosotros.</p>
 								<p><a href="#" class="btn btn-primary btn-learn">Enviar mensaje</a></p>
 							</div>
 
 						</div>
 					</div>
 				</div>
-			</div>
+			
 		</div>
 
 		<div class="modal fade login" id="loginModal">
-	
-			</div>
+
+		</div>
 
 		<!-- jQuery -->
 		<script src="js/jquery.min.js"></script>
