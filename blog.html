@@ -40,7 +40,7 @@
 	<!-- Owl Carousel -->
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
-
+	<link href="css/login.css" rel="stylesheet" />
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -57,18 +57,13 @@
 			<h1 id="colorlib-logo"><a href="index.html">MAN GING ART GALLERY</a></h1>
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
-					<li> <a href="index.html" data-toggle="tooltip" data-placement="right"
-							title="INICIO"><i class="large material-icons">home</i></a></li>
-					<li><a href="work.html" data-toggle="tooltip" data-placement="right" title="ARTISTAS"><i
-								class="large material-icons">palette</i></a></li>
-					<li class="colorlib-active" ><a href="blog.html" data-toggle="tooltip" data-placement="right" title="EVENTOS"><i
-								class="large material-icons">date_range</i></a></li>
-					<li ><a href="about.html" data-toggle="tooltip" data-placement="right" title="NOSOTROS"><i
-								class="large material-icons">info</i></a></li>
-					<li><a href="contact.html" data-toggle="tooltip" data-placement="right" title="CONTACTO"><i
-								class="large material-icons">contact_mail</i></a></li>
-					<li> <a href="contact.html" data-toggle="tooltip" data-placement="right" title="ADMIN"><i
-								class="large material-icons">person_pin</i></a></li>
+					<li > <a href="index.html">Inicio</a></li>
+					<li><a href="work.html">Artistas</a></li>
+					<li class="colorlib-active"><a href="blog.html">Eventos</a></li>
+					<li ><a href="about.html">Nosotros</a></li>
+					<li><a href="contact.html">Contacto</a></li>
+					<li><a data-toggle="modal" href="javascript:void(0)"
+						onclick="openLoginModal();">Administración</a></li>
 				</ul>
 			</nav>
 
@@ -215,6 +210,9 @@
 
 		</div>
 
+		<div class="modal fade login" id="loginModal">
+	
+			</div>
 
 		<!-- jQuery -->
 		<script src="js/jquery.min.js"></script>
@@ -235,6 +233,7 @@
 		<script src="js/jquery.countTo.js"></script>
 		<script src="js/index.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/login.js"></script>
 
 </body>
 

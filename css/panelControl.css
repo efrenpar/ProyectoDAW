@@ -27,7 +27,6 @@ img{
 	
 }
 
-//twbs estilo
 
 .navbar {
   background-color: #090909;
@@ -88,7 +87,6 @@ img{
   color: #e1cb26;
 }
 
-//media queries
 
 @media (max-width: 575px) {
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
