@@ -15,29 +15,75 @@ class Post {
       search: '',
       postList : [
         new Post(
-          'Hugo Lara',
-          '6 de julio de 1919; Quito, Ecuador',
+          'Anibal Villacis',
+          '1927; Ambato, Ecuador',
           'Ecuatoriana',
-          'Expresionismo',
-          'Pintura,Escultura',
-          'images/HugoLara.jpg'
+          'Informalismo precolombino - indigenista',
+          'Pintura', 
+          'images/AnibalVillacis.jpg'
         ),
         new Post(
           'Enrique Tábara',
-          '6 de julio de 1919; Quito, Ecuador',
+          '1930; Guayaquil, Ecuador',
           'Ecuatoriana',
-          'Expresionismo',
-          'Pintura,Escultura',
-          'images/artista2.jpeg'
+          'Expresionista.abstraccion.construtivista precolombino',
+          'Pintura',
+          'images/EnriqueTabara.jpeg'
         ),
         new Post(
 
-          'Oswaldo Guayasamín',
-          '6 de julio de 1919; Quito, Ecuador',
+          'Bolivar Peñafiel',
+          '1934; Guayaquil, Ecuador',
           'Ecuatoriana',
-          'Expresionismo',
+          'Neofigurativismo',
+          'Pintura', 
+          'images/LuisPena.jpg'
+        ),
+        new Post(
+
+          'Eduardo Kingman',
+          '1913; Loja, Ecuador',
+          'Ecuatoriana',
+          'Figurativismo, Realismo Social',
+          'Pintura', 
+          'images/kingman.jpg'
+        ),
+        new Post(
+
+          'Hector Ramirez',
+          '; Guayaquil, Ecuador',
+          'Ecuatoriana',
+          'Abstraccionismo',
+          'Pintura',
+          'images/ramirez.jpg'
+        ),
+        new Post(
+
+          'Antonio Arias',
+          '1944; Quito, Ecuador',
+          'Ecuatoriana',
+          'Neofigurativismo',
           'Pintura,Escultura', 
-          'images/artista1.jpg'
+          'images/arias.jpg'
+        ),
+
+         new Post(
+
+          'Carlos Catasse',
+          '1944; Santiago de Chile, Chile',
+          'Chilena',
+          'Neofigurativo - Abstracto',
+          'Pintura', 
+          'images/catasse.jpg'
+        ),
+        new Post(
+
+          'Manuel Velastegui',
+          '1944; Guayaquil, Ecuador',
+          'Chilena',
+          'Neofigurativo',
+          'Escultura', 
+          'images/velastegui.jpg'
         ),
   ]
     },
