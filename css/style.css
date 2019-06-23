@@ -78,7 +78,7 @@ figure {
   width: 100%;
   overflow: hidden;
   position: relative; }
-
+ 
 #colorlib-aside {
   padding-top: 3em;
   padding-bottom: 40px;
@@ -118,7 +118,10 @@ figure {
   width: 100%;
   height: auto;
 }
-
+.formato-artistas{
+  color: white;
+  font-size: 20px;
+}
 .block-about{
   padding-top: 35px;
 }
@@ -151,19 +154,17 @@ figure {
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
   background-color: #DC143C;
   color: white;
 }
 
-/* Style the "active" element to highlight the current page */
+
 .topnav a.active {
   background-color: #cc0000;
   color: white;
 }
 
-/* Style the search box inside the navigation bar */
 .topnav input[type=text] {
   float: right;
   padding: 6px;
@@ -623,7 +624,7 @@ padding: 30px 60px 0px 40px;
 }
 
 .about-desc h3 {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 500; }
@@ -926,18 +927,19 @@ padding: 30px 60px 0px 40px;
           display: inline;
           padding-right: 5px; }
           .project .desc .con .icon span a {
-            color: #cccccc;
+            color: white;
             padding: 5px;
             background: #333333;
+            font-size:16px;
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
             -ms-border-radius: 4px;
             border-radius: 4px; }
         .project .desc .con .icon i {
           font-size: 16px;
-          color: #cccccc; }
+          color: white; }
     .project .desc h3 {
-      font-size: 16px;
+      font-size: 20px;
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -951,11 +953,11 @@ padding: 30px 60px 0px 40px;
       transform: translate3d(0, -15px, 0);
       margin-bottom: 15px; }
       .project .desc h3 a {
-        color: #fff; }
+        color: white; }
     .project .desc span {
       display: block;
-      color: #999999;
-      font-size: 13px;
+      color: white;
+      font-size: 16px;
       -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
       -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
       transition: opacity 0.3s, -webkit-transform 0.3s;
