@@ -59,6 +59,27 @@
 </head>
 
 <body>
+	<!--Modal: modalCookie-->
+<div class="modal fade top" id="modalInicial" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true" data-backdrop="true" data-step="2" data-intro="Hola bienvenido,  Man-Gin Gallery Art" data-position='left' data-scrollTo='tooltip' >
+  <div class="modal-dialog modal-frame modal-top modal-notify modal-info" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Body-->
+      <div class="modal-body">
+        <div class="row d-flex justify-content-center align-items-center">
+
+          <p class="pt-3 pr-2">¿Deseas un recorrido?</p>
+
+          <a type="button" class="btn btn-primary" id = "okButton">OK<i class="fas fa-book ml-1"></i></a>
+          <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">No, gracias</a>
+        </div>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
 	<div id="colorlib-page" >
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 		<aside id="colorlib-aside" role="complementary" class="border js-fullheight" >
@@ -66,7 +87,7 @@
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul >
 					<li class="colorlib-active"  > 
-					<a  href="index.html" data-step="1" data-intro="Hola bienvenido,  Man-Gin Gallery Art" data-position='left' data-scrollTo='tooltip'  >Inicio</a></li>
+					<a  href="index.html"  >Inicio</a></li>
 					<li ><a href="work.html" data-step="2" data-intro="En esta sección, podrá conocer un poco de los artistas y de las obras que mostramos en nuetra galería"  data-position='left' >Artistas</a></li>
 					<li ><a href="blog.html" data-step="3" data-intro="Aqui podras estar informado de los eventos mas recientes que organizamos." >Eventos</a></li>
 					<li ><a href="about.html"data-step="4" data-intro="Si estas interesado en conocernos más, te gustará entrara aquí">Nosotros</a></li>
@@ -106,9 +127,7 @@
 			
 				<ul class="slides">
 					<li style="background-image: url(images/principal1.jpeg);">
-						<div class = "container" id = "button1" >
-											<a  class = "btn btn-primary"  >Inicio</a>
-										</div>
+						
 						<div class="overlay"></div>
 						<div class="container-fluid">
 							<div class="row">
@@ -120,9 +139,7 @@
 					</li>
 					<li style="background-image: url(images/principal2.jpeg);">
 					
-					<div class = "container" id = "button2" >
-											<a  class = "btn btn-primary"  >Inicio</a>
-										</div>
+					
 						<div class="overlay"></div>
 					
 						<div class="container-fluid">
@@ -134,9 +151,7 @@
 						</div>
 					</li>
 					<li style="background-image: url(images/principal3.jpeg);">
-					<div class = "container" id = "button3" >
-											<a  class = "btn btn-primary" >Inicio</a>
-										</div>
+					
 						<div class="overlay"></div>
 						<div class="container-fluid">
 							<div class="row">
@@ -186,6 +201,9 @@
 	<script src = "js/intro.min.js"></script>
 
 	<script type="text/javascript">
+		$(window).on('load',function(){
+        $('#modalInicial').modal('show');
+		});
 		
     </script>
 

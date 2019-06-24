@@ -218,10 +218,11 @@
 		var buttons =document.getElementsByClassName("btn-primary");
 		for(var i=0; i<buttons.length;i++){
 			buttons[i].onclick = function(){
-				var width = $(document).width();
 				
 				introJs().start();
-				
+				$('#modalInicial').hide();
+				$('#modalInicial').empty();
+				$('.modal-backdrop').hide();
 				
 			}
 			
@@ -229,6 +230,7 @@
 		
 		
 	}
+	
 	
 	
 	/*
