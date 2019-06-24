@@ -231,7 +231,14 @@
 		
 	}
 	
-	
+	var showGuide = function(){
+		
+		$(window).on('load',function(){
+        $('#modalInicial').modal('show');
+		});
+		
+		
+	}
 	
 	/*
 	var stepper=function(){
@@ -268,6 +275,7 @@
 		owlCrouselFeatureSlide();
 		//stepper();
 		intro();
+		showGuide();
 	});
 
 

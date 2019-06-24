@@ -23,7 +23,7 @@ header {
 }
 
 img{
-	vertical-align: bottom;
+	vertical-align: bottom !important;
 	
 }
 
@@ -87,6 +87,26 @@ img{
   color: #e1cb26;
 }
 
+
+/*estilos */
+#header{
+	background: #e1cb26;
+	color: #fff;
+	padding-bottom:0px;
+	margin-bottom:0px;
+}
+
+#header .crear{
+	padding-top:20px;
+}
+
+.color-principal{
+	background-color: #dc143c !important;
+    border-color: #e1cb26 !important;
+	color: #fff !important;
+	
+	
+}
 
 @media (max-width: 575px) {
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {

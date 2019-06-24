@@ -49,20 +49,53 @@
 			<div>
 				<div class = "col-md-2"> 
 					<div class="dropdown crear">
-						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 							Crear Contenido
-						</button>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item" href="#">Agregar Pagina</a>
-							<a class="dropdown-item" href="#">Agregar Entrada</a>
-							<a class="dropdown-item" href="#">Agregar Usuario</a>
+							<span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li><a href="#">Agregar Página</a></li>
+							<li><a href="#">Agregar Entrada</a></li>
+							<li><a href="#">Agregar Usuario</a></li>
+						  </ul>
 						</div>
-					</div>
 				</div>
 			</div>
 			</div>
 		</div>
 	</header>
+	
+	<section id = "breadcrumb">
+		<div class = "container">
+			<ol class = "breadcrumb">
+				<li class = "active"> Panel de Control</li>
+			</ol>
+		</div>
+	</section>
+	
+	<section id = "main">
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-md-3">
+				<div class="list-group">
+					  <a href="#" class="list-group-item active color-principal">
+						 <img src = "images/pcicons/settings.png" width = "20px" height = "20px"> Panel de control</img>
+						 
+					  </a>
+					  <a href="#" class="list-group-item">
+					  <img src = "images/pcicons/list.png" width = "20px" height = "20px"> Páginas</img>
+					  </a>
+					  <a href="#" class="list-group-item">
+					  <img src = "images/pcicons/pencil.png" width = "20px" height = "20px"> Entradas</img>
+					  </a>
+					  <a href="#" class="list-group-item"><img src = "images/pcicons/user.png" width = "20px" height = "20px"> Usuarios</img></a>
+					  
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
 	
 	</body>
 </html>
