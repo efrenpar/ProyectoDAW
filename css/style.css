@@ -562,7 +562,7 @@ body.offcanvas {
 .colorlib-about,
 .colorlib-services,
 .colorlib-contact {
-  padding-top: 6em;
+  padding-top: 4em;
   padding-bottom: 9em;
   clear: both;
   width: 100%;
@@ -572,7 +572,7 @@ body.offcanvas {
     .colorlib-about,
     .colorlib-services,
     .colorlib-contact {
-      padding-top: 9em;
+      padding-top: 4em;
       padding-bottom: 8em; } 
       .colorlib-work{
         padding-top: 4em;
@@ -583,10 +583,6 @@ body.offcanvas {
 .img_small{
 padding: 30px 60px 0px 40px;
 
-}
-.section_blog{
-  text-align: center;
-  align-content: center;
 }
 .about-img,
 .about-img-2,
@@ -1049,7 +1045,7 @@ padding: 30px 60px 0px 40px;
 #colorlib-counter {
   position: relative;
   clear: both;
-  margin-bottom: 5em; }
+  margin-bottom: 1em; }
 
 .colorlib-counters {
   padding: 3em 0;
