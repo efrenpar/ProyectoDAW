@@ -43,7 +43,7 @@
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 	<link href="css/login.css" rel="stylesheet" />
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -97,17 +97,16 @@
 			<div id="app" class="colorlib-work">
 
 				<div class="topnav">
-					<a class="active" href="#home">Todos</a>
-					<a href="#about">Nacionales</a>
-					<a href="#contact">Internacionales</a>
-					<input type="text" v-model="search" placeholder="Buscar..">
-					
+					<a v-on:click="filterKey = 'todos'" href="#" :class="{ active: filterKey == 'todos' } ">Todos</a>
+					<a v-on:click="filterKey = 'nacionales'" :class="{ active: filterKey == 'nacionales' }" href="#">Nacionales</a>
+					<a v-on:click="filterKey = 'internacionales'" :class="{ active: filterKey == 'internacionales' }" href="#">Internacionales</a>
+					<input type="text" v-on:click="filterKey = 'buscar'" v-model="search"  v-on:click="userFilterKey = 'buscar'" placeholder="Buscar..">
 					<button class="btn-primary" type="submit"><i class="small material-icons">search</i></button>
 				</div>
 
 
 				<div class="colorlib-narrow-content">
-						<h1 v-if="!filteredList.length">Sin resultados</h1>
+						<h1 v-if="!filtroArtistas.length">Sin resultados</h1>
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
 							data-animate-effect="fadeInLeft">
@@ -118,7 +117,7 @@
 
 					<div class="row row-bottom-padded-md">
 						
-							<div class="col-md-6" v-for="post in filteredList" data-animate-effect="fadeInLeft">
+							<div class="col-md-6" v-for="post in filtroArtistas" data-animate-effect="fadeInLeft">
 									
 								<div class="project" v-bind:style="{ 'background-image': 'url(' + post.img + ')' }">
 									<div class="desc">
@@ -131,13 +130,16 @@
 											<p class="icon">
 												<span ><a href="#"><i class="icon-eye"></i> Obras</a></span>
 												<span ><a href="#"><i class="icon-heart"></i>100</a></span>
-												<span><a href="#"><i class="icon-share3"></i> 49</a></span>
 											</p>
 										</div>
 									</div>
 								</div>
-
+								
 							</div>
+
+							
+								
+					
 
 						</div>
 						<div class="row">
@@ -196,7 +198,7 @@
 		<script src="js/owl.carousel.min.js"></script>
 		<!-- Counters -->
 		<script src="js/jquery.countTo.js"></script>
-
+		
 
 		<!-- MAIN JS -->
 		<script src="js/main.js"></script>

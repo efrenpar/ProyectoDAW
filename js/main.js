@@ -239,27 +239,7 @@
 		
 		
 	}
-	
-	/*
-	var stepper=function(){
-	    var container = document.getElementById('step-by-step');
-		var steps = container.getElementsByClassName("steps");
-		console.log(steps);
-		for (var i=0;steps.length;i++){
-			console.log(steps[i]);
-			steps[i].addEventListener("click",function(){
-				
-					var current = document.getElementsByClassName("active");
-					current[0].className = current[0].className.replace(" active", "");
-					this.className += " active";
-					
-				
-				
-			});
-		}
-	}
-	
-	*/
+
 	
 	
 	// Document on load.
@@ -273,10 +253,10 @@
 		sliderMain();
 		stickyFunction();
 		owlCrouselFeatureSlide();
-		//stepper();
 		intro();
 		showGuide();
 	});
 
 
 }());
+
