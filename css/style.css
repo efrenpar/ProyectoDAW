@@ -107,7 +107,9 @@ figure {
 	opacity: 1
   }
   
-
+.card-color{
+background-color: #e6e6e6
+}
 .img1-about{
   width: 100%;
   height: auto;
