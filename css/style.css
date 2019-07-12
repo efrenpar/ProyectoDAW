@@ -1582,7 +1582,13 @@ margin: 10px;
 	
 	.modal-body{
 	
-	 display: none;
+   display: inline-flex;
 	
-	}
-}
+  }
+  
+  #primerModal{
+    display:none;
+  }
+
+ 
+}         

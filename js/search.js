@@ -69,7 +69,7 @@ new Vue({
 
 function mostrar_obras() {
   $('#modal_obras').empty();
-  $('#modal_obras').append('<div class="modal-dialog login animated">'
+  $('#modal_obras').append('<div class="modal-dialog-obras login animated">'
     + '<div class="modal-content"> <div class="modal-header"> <h4> Obras de artistas</h4> </div>'+
     '<div id="cuerpo" class="modal-body"></div></div></div>');
     var artista=document.getElementById("cuerpo");

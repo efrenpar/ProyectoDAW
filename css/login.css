@@ -65,9 +65,15 @@
 }
 
 .login .modal-dialog{
+    width: 400px;
+    padding: 40px 40px 40px 40px;
+}
+
+.login .modal-dialog-obras{
     width: 600px;
     padding: 40px 40px 40px 40px;
 }
+
 .login{
     border-top: 0;
     margin-top: 0px;
