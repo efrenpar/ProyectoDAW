@@ -29,11 +29,11 @@
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Paginas <span
                             class="caret"></span></a>
                     <ul class="dropdown-menu">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="blog.html">Eventos</a></li>
-                            <li><a href="work.html">Artistas</a></li>
-                            <li><a href="contact.html">Contacto</a></li>
-                            <li><a href="about.html">Nosotros</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="blog.html">Eventos</a></li>
+                        <li><a href="work.html">Artistas</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="about.html">Nosotros</a></li>
                     </ul>
                 </li>
                 <li><a href="qrcode.html">Generador QR</a></li>
@@ -75,8 +75,7 @@
                             <div class="tab-pane active" id="tab1">
                                 <div class="form">
                                     <div class="input-group">
-                                        <input class="input--style-1"
-                                            placeholder="Titulo del QR" required="required">
+                                        <input class="input--style-1" placeholder="Titulo del QR" required="required">
                                         <a class="btn--next" href="#">Siguiente</a>
                                     </div>
                                 </div>
@@ -84,37 +83,38 @@
                             <div class="tab-pane" id="tab2">
                                 <div class="form">
                                     <div class="input-group">
-                                        <input class="input--style-1" id="url" 
-                                            placeholder="url: https://google.com" required="required">
+                                        <input class="input--style-1" id="url" placeholder="url: https://google.com"
+                                            required="required">
                                         <a class="btn--next" href="#">Siguiente</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane" id="tab3">
-                                <form>
-                               <div class="row">
+
+                                <div class="row">
                                     <div class="format-qr" id="qrcodeTable">
-                                      
+
                                     </div>
-                                
+
                                 </div>
                             </div>
-                        </form>
-                            
                         </div>
                     </form>
+
                 </div>
+
             </div>
         </div>
     </div>
+    
 
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.bootstrap.wizard.min.js"></script>
     <script src="js/global.js"></script>
-    <script type="text/javascript" src="js/jquery.qrcode.js"></script>
-    <script type="text/javascript" src="js/qrcode.js"></script>
+    <script  src="js/jquery.qrcode.js"></script>
+    <script  src="js/qrcode.js"></script>
     <script>
-       
+
         jQuery('#qrcodeTable').qrcode({
             render: "table",
             text: $("#url").val()

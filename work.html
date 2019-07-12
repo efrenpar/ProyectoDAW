@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -46,19 +46,15 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
 
 </head>
 
 <body>
 	<div id="colorlib-page">
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
-		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+		<aside id="colorlib-aside" class="border js-fullheight">
 			<h1 id="colorlib-logo"><a href="index.html">MAN GING ART GALLERY</a></h1>
-			<nav id="colorlib-main-menu" role="navigation">
+			<nav id="colorlib-main-menu">
 				<ul>
 					<li><a href="index.html">Inicio</a></li>
 					<li class="colorlib-active"><a href="work.html">Artistas</a></li>
@@ -77,7 +73,7 @@
 						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
 						is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
 							target="_blank">Colorlib</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </span>
+
 						<span>Demo Images: <a href="http://nothingtochance.co/"
 								target="_blank">nothingtochance.co</a></span></small></p>
 				<ul>
@@ -98,15 +94,18 @@
 
 				<div class="topnav">
 					<a v-on:click="filterKey = 'todos'" href="#" :class="{ active: filterKey == 'todos' } ">Todos</a>
-					<a v-on:click="filterKey = 'nacionales'" :class="{ active: filterKey == 'nacionales' }" href="#">Nacionales</a>
-					<a v-on:click="filterKey = 'internacionales'" :class="{ active: filterKey == 'internacionales' }" href="#">Internacionales</a>
-					<input type="text" v-on:click="filterKey = 'buscar'" v-model="search"  v-on:click="userFilterKey = 'buscar'" placeholder="Buscar..">
+					<a v-on:click="filterKey = 'nacionales'" :class="{ active: filterKey == 'nacionales' }"
+						href="#">Nacionales</a>
+					<a v-on:click="filterKey = 'internacionales'" :class="{ active: filterKey == 'internacionales' }"
+						href="#">Internacionales</a>
+					<input type="text" v-on:click="filterKey = 'buscar'" v-model="search"
+						v-on:click="userFilterKey = 'buscar'" placeholder="Buscar..">
 					<button class="btn-primary" type="submit"><i class="small material-icons">search</i></button>
 				</div>
 
 
 				<div class="colorlib-narrow-content">
-						<h1 v-if="!filtroArtistas.length">Sin resultados</h1>
+					<h1 v-if="!filtroArtistas.length">Sin resultados</h1>
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
 							data-animate-effect="fadeInLeft">
@@ -116,45 +115,45 @@
 					</div>
 
 					<div class="row row-bottom-padded-md">
-						
-							<div class="col-md-6" v-for="post in filtroArtistas" data-animate-effect="fadeInLeft">
-									
-								<div class="project" v-bind:style="{ 'background-image': 'url(' + post.img + ')' }">
-									<div class="desc">
-										<div class="con">
-											<h3><a href="work.html">{{ post.autor}}</a></h3>
-											<span class="formato-artistas" >Nacimiento: {{ post.nacimiento}} </span>
-											<span class="formato-artistas">Nacionalidad: {{ post.nacionalidad}} </span>
-											<span class="formato-artistas">Movimiento: {{ post.movimiento}} </span>
-											<span class="formato-artistas">Campo: {{ post.campo}}</span>
-											<p class="icon">
-												<span ><a href="#"><i class="icon-eye"></i> Obras</a></span>
-												<span ><a href="#"><i class="icon-heart"></i>100</a></span>
-											</p>
-										</div>
+
+						<div class="col-md-6" v-for="post in filtroArtistas" data-animate-effect="fadeInLeft">
+
+							<div class="project" v-bind:style="{ 'background-image': 'url(' + post.img + ')' }">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">{{ post.autor}}</a></h3>
+										<span class="formato-artistas">Nacimiento: {{ post.nacimiento}} </span>
+										<span class="formato-artistas">Nacionalidad: {{ post.nacionalidad}} </span>
+										<span class="formato-artistas">Movimiento: {{ post.movimiento}} </span>
+										<span class="formato-artistas">Campo: {{ post.campo}}</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-eye"></i> Obras</a></span>
+											<span><a href="#"><i class="icon-heart"></i>100</a></span>
+										</p>
 									</div>
 								</div>
-								
 							</div>
 
-							
-								
-					
+						</div>
 
+
+
+
+
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<ul class="pagination">
+								<li class="disabled"><a href="#">&laquo;</a></li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">&raquo;</a></li>
+							</ul>
 						</div>
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<ul class="pagination">
-									<li class="disabled"><a href="#">&laquo;</a></li>
-									<li class="active"><a href="#">1</a></li>
-									<li><a href="#">2</a></li>
-									<li><a href="#">3</a></li>
-									<li><a href="#">4</a></li>
-									<li><a href="#">&raquo;</a></li>
-								</ul>
-							</div>
-						</div>
-					
+					</div>
+
 				</div>
 
 				<div id="get-in-touch" class="colorlib-bg-color">
@@ -175,7 +174,8 @@
 						</div>
 					</div>
 				</div>
-			
+
+			</div>
 		</div>
 
 		<div class="modal fade login" id="loginModal">
@@ -198,13 +198,14 @@
 		<script src="js/owl.carousel.min.js"></script>
 		<!-- Counters -->
 		<script src="js/jquery.countTo.js"></script>
-		
+
 
 		<!-- MAIN JS -->
 		<script src="js/main.js"></script>
 		<script src="js/login.js"></script>
-		<script type="text/javascript" src="https://unpkg.com/vue@2.3.3"></script>
+		<script src="https://unpkg.com/vue@2.3.3"></script>
 		<script src="js/search.js"></script>
+	</div>
 
 </body>
 
