@@ -1548,7 +1548,7 @@ margin: 10px;
 	font-size: 30px !important;
 }
 
-#okButton, #okbutton:hover{
+#okButton{
  outline: none;
   background-image: none;
   background-color: transparent;
@@ -1561,6 +1561,13 @@ margin: 10px;
   height:55px;
   font-size: 30px !important;
 }
+
+#okButton:hover{
+	height:300%;
+	font-size: 200% !important;
+}
+
+
 
 @media screen and (max-width: 1024px){
 	
