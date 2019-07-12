@@ -225,8 +225,7 @@ background-color: #e6e6e6
       padding-top: 4em; } }
 
       #colorlib-logo img[src="images/logo3.png"]{
-      width: 204px;
-      height:108px;
+      width: 100%;
       padding-bottom: 0em !important;
     }
 
