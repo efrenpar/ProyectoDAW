@@ -70,18 +70,12 @@
                                     <span class="desc">QR Code</span>
                                 </a>
                             </li>
-                            <li class="tab-list__item">
-                                <a class="tab-list__link" href="#tab4" data-toggle="tab">
-                                    <span class="step">4</span>
-                                    <span class="desc">Guardar</span>
-                                </a>
-                            </li>
                         </ul>
                         <div class="tab-content">
                             <div class="tab-pane active" id="tab1">
                                 <div class="form">
                                     <div class="input-group">
-                                        <input class="input--style-1" type="text" name="username"
+                                        <input class="input--style-1"
                                             placeholder="Titulo del QR" required="required">
                                         <a class="btn--next" href="#">Siguiente</a>
                                     </div>
@@ -90,7 +84,7 @@
                             <div class="tab-pane" id="tab2">
                                 <div class="form">
                                     <div class="input-group">
-                                        <input class="input--style-1" type="email" name="email"
+                                        <input class="input--style-1" id="url" 
                                             placeholder="url: https://google.com" required="required">
                                         <a class="btn--next" href="#">Siguiente</a>
                                     </div>
@@ -99,29 +93,14 @@
                             <div class="tab-pane" id="tab3">
                                 <form>
                                <div class="row">
-                                   <div class="col-md-5">
                                     <div class="format-qr" id="qrcodeTable">
-
+                                      
                                     </div>
-                                </div>
-                                <div class="col-md-2">
-                                </div>
-                                <div class="col-md-3">
-                                    <a class="btn--next" href="#">Siguiente</a>
-                                </div>
+                                
                                 </div>
                             </div>
                         </form>
                             
-                            <div class="tab-pane" id="tab4">
-                                <div class="form">
-                                    <div class="input-group">
-                                        <input class="input--style-1" type="password" name="re_password"
-                                            placeholder="Password" required="required">
-                                        <a class="btn--next" href="#">Confirmar</a>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </form>
                 </div>
@@ -135,10 +114,10 @@
     <script type="text/javascript" src="js/jquery.qrcode.js"></script>
     <script type="text/javascript" src="js/qrcode.js"></script>
     <script>
-        //jQuery('#qrcode').qrcode("this plugin is great");
+       
         jQuery('#qrcodeTable').qrcode({
             render: "table",
-            text: "http://jetienne.com"
+            text: $("#url").val()
         });	
     </script>
 </body>

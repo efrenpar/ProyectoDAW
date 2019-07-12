@@ -5,43 +5,27 @@
     try {
         var $validator = $("#js-wizard-form").validate({
             rules: {
-                username: {
+                titulo: {
                     required: true,
                     minlength: 3
                 },
-                email: {
+                url: {
                     required: true,
                     email: true,
                     minlength: 3
-                },
-                password: {
-                    required: true,
-                    minlength: 8
-                },
-                re_password: {
-                    required: true,
-                    minlength: 8,
-                    equalTo: '#password'
                 }
+               
             },
             messages: {
-                username: {
-                    required: "Enter username"
+                titulo: {
+                    required: "Ingrese el titulo"
                 },
     
-                email: {
-                    required: "Enter your email",
+                url: {
+                    required: "Seleccione la url",
     
-                },
-                password: {
-                    required: "Enter password",
-                    minlength: "Password must be >= 8 character"
-                },
-                re_password: {
-                    required: "Please confirm your password",
-                    minlength: "Password must has >= 8 character",
-                    equalTo: "Password doesn't equal to the previous one"
                 }
+                
             }
         });
     

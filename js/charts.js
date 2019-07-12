@@ -3,44 +3,38 @@ var app = new Vue({
     el: '#chart1',
     data: {
         width: '100%',
-        height: '380',
+        height: '550',
         type: 'column2d',
         dataFormat: 'json',
         dataSource: {
             "chart": {
-                "caption": "El producto más vendido es el Vidrio",
+                "caption": "Las obras de Enrique Tábara son las más vistas",
                 "subCaption": "",
-                "xAxisName": "Productos",
-                "yAxisName": "Cantidad",
+                "xAxisName": "Artistas",
+                "yAxisName": "Visualizaciones",
                 "numberSuffix": "K",
                 "theme": "fusion"
             },
             "data": [{
-                "label": "Vidrios",
+                "label": "E.Tábara",
                 "value": "2.9"
             }, {
-                "label": "Policarbonato",
+                "label": "A.Villacis",
                 "value": "2.6"
             }, {
-                "label": "Espejos",
+                "label": "E.Kigman",
                 "value": "1.8"
             }, {
-                "label": "Herrajes",
+                "label": "B.Peñafiel",
                 "value": "1.4"
             },
               {
-                "label": "Agarraderas",
+                "label": "H.Ramirez",
                 "value": "1.1"
             },{
-                "label": "Maquinarias",
-                "value": "0.1"
-            }, {
-                "label": "Pisos",
-                "value": "0.7"
-            }, {
-                "label": "Porcelanatos",
-                "value": "1"
-            }]
+                "label": "M.Velastegui",
+                "value": "0.1"}
+           ]
         }
     }
 
@@ -95,82 +89,82 @@ var app = new Vue({
         dataSource: {
 
 "chart": {
-    "caption": "La categoría con mayor ventas es Vidrios y Espejos ($55.5k)",
+    "caption": "Los eventos con mayor acogida son realizados en Guayaquil($55.5k)",
     "showplotborder": "1",
     "plotfillalpha": "60",
     "hoverfillcolor": "#CCCCCC",
     "numberprefix": "$",
-    "plottooltext": "La venta de <b>$label</b> fue de <b>$$valueK</b>, el cual representa un $percentValue de su categoría",
+    "plottooltext": "Las ventas en <b>$label</b> fueron de <b>$$valueK</b>, lo cual representa un $percentValue de su categoría",
     "theme": "fusion"
   },
   "category": [
     {
-      "label": "Productos",
+      "label": "Ecuador",
       "tooltext": "Por favor pase sobre las subcatergorías para ver detalles",
       "color": "#ffffff",
       "value": "150",
       "category": [
         {
-          "label": "Vidrios y Espejos",
+          "label": "Guayaquil",
           "color": "#f8bd19",
           "value": "55.5",
           "category": [
             {
-              "label": "Vidrio Lake",
+              "label": "Museo Presley",
               "color": "#f8bd19",
               "value": "11.1"
             },
             {
-              "label": "Vidrio Catedral ",
+              "label": "M.Municipal",
               "color": "#f8bd19",
               "value": "20.75"
             },
             {
-              "label": "Vidrio Grayliti ",
+              "label": "Red Solare ",
               "color": "#f8bd19",
               "value": "9.99"
             },
             {
-              "label": "Espejos Flotados",
+              "label": "Expo.2019",
               "color": "#f8bd19",
               "value": "13.66"
             }
           ]
         },
         {
-          "label": "Maquinarias",
+          "label": "Quito",
           "color": "#33ccff",
           "value": "42",
           "category": [
             {
-              "label": "Perforadoras",
+              "label": "Museo Mariño",
               "color": "#33ccff",
               "value": "10.08"
             },
             {
-              "label": "Biseladoras",
+              "label": "Pilar Bustos",
               "color": "#33ccff",
               "value": "18.9"
             },
             {
-              "label": "Canteadoras",
+              "label": "S.de Papel",
               "color": "#33ccff",
               "value": "6.3"
             },
             {
-              "label": "Muelas",
+              "label": "M.Municipal",
               "color": "#33ccff",
               "value": "6.72"
             }
           ]
         },
         {
-          "label": "Porcelanato",
+          "label": "Machala",
           "color": "#ffcccc",
           "value": "22.5",
           "category": [
             {
-              "label": "Flaviker",
+              "label": "M.Flaviker",
               "color": "#ffcccc",
               "value": "6.45"
             },
@@ -180,29 +174,29 @@ var app = new Vue({
               "value": "9.3"
             },
             {
-              "label": "New Ker",
+              "label": "Municipio",
               "color": "#ffcccc",
               "value": "6.75"
             }
           ]
         },
         {
-          "label": "Herramientas",
+          "label": "Cuenca",
           "color": "#ccff66",
           "value": "30",
           "category": [
             {
-              "label": "Viceras",
+              "label": "Malecon",
               "color": "#ccff66",
               "value": "8.1"
             },
             {
-              "label": "Herrajes",
+              "label": "Express",
               "color": "#ccff66",
               "value": "10.5"
             },
             {
-              "label": "Puntos Fijos",
+              "label": "M.Catedral",
               "color": "#ccff66",
               "value": "11.4"
             }

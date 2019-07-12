@@ -35,11 +35,11 @@
                     <li class="active"><a href="admin.html">Panel de Control</a></li>
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Paginas <span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Eventos</a></li>
-                        <li><a href="#">Artistas</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#index.html">Inicio</a></li>
+                        <li><a href="#blog.html">Eventos</a></li>
+                        <li><a href="#work.html">Artistas</a></li>
+                        <li><a href="#contact.html">Contacto</a></li>
+                        <li><a href="#about.html">Nosotros</a></li>
                       </ul>
                     </li>
                     <li><a href="qrcode.html">Generador QR</a></li>
@@ -90,6 +90,49 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="row">
+
+                            <div class="col-md-7">
+                                <div class="card ">
+                                    <div class="card-header ">
+                                        <h4 class="card-title format">Artistas con mayores visualizaciones en la página</h4>
+                                    </div>
+                                    <div class="card-body ">
+                                            <hr>
+                                        <div id="chart1">
+                                            <fusioncharts :type="type" :width="width" :height="height"
+                                                :dataFormat="dataFormat" :dataSource="dataSource"></fusioncharts>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer ">
+                                        <hr>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="card ">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Eventos</h4>
+                                    </div>
+                                    <div class="card-body ">
+                                            <hr>
+                                        <div id="chart4">
+                                            <fusioncharts :type="type" :width="width" :height="height"
+                                                :dataFormat="dataFormat" :dataSource="dataSource"></fusioncharts>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer ">
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
 
                         </div>
                     </div>

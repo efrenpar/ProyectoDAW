@@ -1,4 +1,6 @@
 (function( $ ){
+
+
 	$.fn.qrcode = function(options) {
 		// if options is string, 
 		if( typeof options === 'string' ){
@@ -9,8 +11,8 @@
 		// typeNumber < 1 for automatic calculation
 		options	= $.extend( {}, {
 			render		: "canvas",
-			width		: 100,
-			height		: 100,
+			width		: 300,
+			height		: 300,
 			typeNumber	: -1,
 			correctLevel	: QRErrorCorrectLevel.H,
                         background      : "#ffffff",
@@ -86,4 +88,6 @@
 			$(element).appendTo(this);
 		});
 	};
+
+
 })( jQuery );
