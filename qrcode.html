@@ -85,7 +85,7 @@
                                     <div class="input-group">
                                         <input class="input--style-1" id="url" placeholder="url: https://google.com"
                                             required="required">
-                                        <a class="btn--next" href="#">Siguiente</a>
+                                        <a onclick="crear_qr()" class="btn--next" href="#">Siguiente</a>
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +93,7 @@
 
                                 <div class="row">
                                     <div class="format-qr" id="qrcodeTable">
-
+                                     
                                     </div>
 
                                 </div>
@@ -114,11 +114,16 @@
     <script  src="js/jquery.qrcode.js"></script>
     <script  src="js/qrcode.js"></script>
     <script>
+ var x;
+ $("#url").keyup(function(){
+  x=$("#url").val();
+  console.log(x);
+});
 
-        jQuery('#qrcodeTable').qrcode({
-            render: "table",
-            text: $("#url").val()
-        });	
+function crear_qr(){
+    $('#qrcodeTable').qrcode(x);
+    var canvas = $('#output canvas');
+}
     </script>
 </body>
 
