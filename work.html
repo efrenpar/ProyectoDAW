@@ -126,6 +126,10 @@
 										<span class="formato-artistas">Nacionalidad: {{ post.nacionalidad}} </span>
 										<span class="formato-artistas">Movimiento: {{ post.movimiento}} </span>
 										<span class="formato-artistas">Campo: {{ post.campo}}</span>
+										<p class="icon">
+											<span><a onclick="openModal()"><i class="icon-eye"></i> Obras</a></span>
+											<span><a href="#"><i class="icon-heart"></i>100</a></span>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -133,74 +137,82 @@
 						</div>
 
 
+						
 
 
+
+
+
+						</div>
+						<div class="row">
+							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+								<ul class="pagination">
+									<li class="disabled"><a href="#">&laquo;</a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">&raquo;</a></li>
+								</ul>
+							</div>
+						</div>
 
 					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<ul class="pagination">
-								<li class="disabled"><a href="#">&laquo;</a></li>
-								<li class="active"><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#">4</a></li>
-								<li><a href="#">&raquo;</a></li>
-							</ul>
+
+					<div id="get-in-touch" class="colorlib-bg-color">
+						<div class="colorlib-narrow-content">
+							<div class="row">
+								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+									<h2>Contáctanos!</h2>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+									data-animate-effect="fadeInLeft">
+									<p class="colorlib-lead">Descubre y aprende sobre los mejores artistas Ecuatorianos
+										con
+										nosotros.</p>
+									<p><a href="contact.html" class="btn btn-primary btn-learn">Enviar mensaje</a></p>
+								</div>
+
+							</div>
 						</div>
 					</div>
 
 				</div>
+			</div>
 
-				<div id="get-in-touch" class="colorlib-bg-color">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<h2>Contáctanos!</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<p class="colorlib-lead">Descubre y aprende sobre los mejores artistas Ecuatorianos con
-									nosotros.</p>
-								<p><a href="contact.html" class="btn btn-primary btn-learn">Enviar mensaje</a></p>
-							</div>
-
-						</div>
-					</div>
-				</div>
+			<div class="modal fade login" id="loginModal">
 
 			</div>
+
+			<div class="modal fade login" id="modal_obras">
+
+			</div>
+
+			<!-- jQuery -->
+			<script src="js/jquery.min.js"></script>
+			<!-- jQuery Easing -->
+			<script src="js/jquery.easing.1.3.js"></script>
+			<!-- Bootstrap -->
+			<script src="js/bootstrap.min.js"></script>
+			<!-- Waypoints -->
+			<script src="js/jquery.waypoints.min.js"></script>
+			<!-- Flexslider -->
+			<script src="js/jquery.flexslider-min.js"></script>
+			<!-- Sticky Kit -->
+			<script src="js/sticky-kit.min.js"></script>
+			<!-- Owl carousel -->
+			<script src="js/owl.carousel.min.js"></script>
+			<!-- Counters -->
+			<script src="js/jquery.countTo.js"></script>
+
+			<!-- MAIN JS -->
+			<script src="js/main.js"></script>
+			<script src="js/login.js"></script>
+			<script src="https://unpkg.com/vue@2.3.3"></script>
+			<script src="js/search.js"></script>
 		</div>
-
-		<div class="modal fade login" id="loginModal">
-
-		</div>
-
-		<!-- jQuery -->
-		<script src="js/jquery.min.js"></script>
-		<!-- jQuery Easing -->
-		<script src="js/jquery.easing.1.3.js"></script>
-		<!-- Bootstrap -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- Waypoints -->
-		<script src="js/jquery.waypoints.min.js"></script>
-		<!-- Flexslider -->
-		<script src="js/jquery.flexslider-min.js"></script>
-		<!-- Sticky Kit -->
-		<script src="js/sticky-kit.min.js"></script>
-		<!-- Owl carousel -->
-		<script src="js/owl.carousel.min.js"></script>
-		<!-- Counters -->
-		<script src="js/jquery.countTo.js"></script>
-
-		<!-- MAIN JS -->
-		<script src="js/main.js"></script>
-		<script src="js/login.js"></script>
-		<script src="https://unpkg.com/vue@2.3.3"></script>
-		<script src="js/search.js"></script>
-	</div>
 
 </body>
 

@@ -253,7 +253,6 @@
 		owlCrouselFeatureSlide();
 		intro();
 		showGuide();
-		addContenSection();
 	});
 
 

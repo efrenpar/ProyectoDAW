@@ -116,7 +116,9 @@ background-color: #e6e6e6
   height: auto;
   padding-top: 60px;
 }
-
+.obra_responsive{
+  width: 100%;
+}
 .img2-about{
   width: 100%;
   height: auto;
