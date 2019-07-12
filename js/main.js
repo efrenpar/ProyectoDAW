@@ -240,8 +240,6 @@
 		
 	}
 
-	
-	
 	// Document on load.
 	$(function(){
 		fullHeight();
@@ -255,6 +253,7 @@
 		owlCrouselFeatureSlide();
 		intro();
 		showGuide();
+		addContenSection();
 	});
 
 

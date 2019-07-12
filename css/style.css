@@ -77,8 +77,9 @@ figure {
 #colorlib-page {
   width: 100%;
   overflow: hidden;
-  position: relative; }
- 
+  position: relative; 
+}
+
 #colorlib-aside {
   padding-top: 3em;
   padding-bottom: 40px;
@@ -563,12 +564,16 @@ body.offcanvas {
 .colorlib-blog,
 .colorlib-about,
 .colorlib-services,
+.colorlib-work,
 .colorlib-contact {
   padding-top: 4em;
-  padding-bottom: 9em;
+  padding-bottom: 0em !important;
   clear: both;
   width: 100%;
   display: block; }
+
+
+
   @media screen and (max-width: 768px) {
     .colorlib-blog,
     .colorlib-about,
@@ -644,7 +649,8 @@ padding: 30px 60px 0px 40px;
     padding-bottom:56.25%;
     position:relative;
     height:0;
-}
+  }
+
 .map-responsive iframe{
     left:0;
     top:0;
@@ -1519,3 +1525,48 @@ margin: 10px;
 }
 
 
+
+#primerModal{
+	
+	 background-color: #000 ;
+	 color:#fff;
+	 border:0.1px solid #fff;
+	 font-size: 200% !important;
+	 text-align: center
+	
+}
+
+[data-dismiss =  "modal"]:hover{
+	
+	color:#fff;
+	font-size: 200% !important;
+	
+}
+
+[data-dismiss =  "modal"]{
+	
+	font-size: 30px !important;
+}
+
+#okButton, #okbutton:hover{
+ outline: none;
+  background-image: none;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  box-shadow: none;
+  border-shadow: none;
+  text-shadow: none;
+  height:55px;
+  font-size: 30px !important;
+}
+
+@media screen and (max-width: 1024px){
+	
+	.modal-body{
+	
+	 display: none;
+	
+	}
+}
