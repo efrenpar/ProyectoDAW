@@ -221,6 +221,13 @@ background-color: #e6e6e6
       -o-transform: translateX(-270px);
       transform: translateX(-270px);
       padding-top: 4em; } }
+
+      #colorlib-logo img[src="images/logo3.png"]{
+      width: 204px;
+      height:108px;
+      padding-bottom: 0em !important;
+    }
+
   #colorlib-aside #colorlib-logo {
     text-align: right;
     font-weight: 700;
@@ -228,6 +235,7 @@ background-color: #e6e6e6
     text-transform: uppercase;
     margin-bottom: 3em;
     display: block;
+    padding-top: 0em !important;
     width: 100%; }
     @media screen and (max-width: 768px) {
       #colorlib-aside #colorlib-logo {
