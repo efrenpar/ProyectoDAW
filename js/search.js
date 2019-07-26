@@ -73,7 +73,7 @@ function mostrar_obras(autor) {
 }
 
 $.getJSON('data/artistas.json',function(json) {
-    var aux = json.escritores;
+    var aux = json.artistas;
     console.log(aux);
     app.artistas=aux;
 });
