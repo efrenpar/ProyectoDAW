@@ -116,7 +116,7 @@
 
 					<div class="row row-bottom-padded-md">
 
-						<div class="col-md-6" v-for="post in filtroArtistas" data-animate-effect="fadeInLeft">
+						<div id="obras" class="col-md-6" v-for="post in filtroArtistas" data-animate-effect="fadeInLeft">
 
 							<div class="project" v-bind:style="{ 'background-image': 'url(' + post.img + ')' }">
 								<div class="desc">
@@ -127,7 +127,7 @@
 										<span class="formato-artistas">Movimiento: {{ post.movimiento}} </span>
 										<span class="formato-artistas">Campo: {{ post.campo}}</span>
 										<p class="icon">
-											<span><a onclick="openModal()"><i class="icon-eye"></i> Obras</a></span>
+											<span><a v-on:click="openModal(post.autor)"><i class="icon-eye"></i> Obras</a></span>
 											<span><a href="#"><i class="icon-heart"></i>100</a></span>
 										</p>
 									</div>
@@ -135,13 +135,6 @@
 							</div>
 
 						</div>
-
-
-						
-
-
-
-
 
 						</div>
 						<div class="row">

@@ -117,10 +117,11 @@
  var x;
  $("#url").keyup(function(){
   x=$("#url").val();
-  console.log(x);
 });
 
 function crear_qr(){
+    var aux=document.getElementById('qrcodeTable');
+    aux.removeChild(aux.firstChild);
     $('#qrcodeTable').qrcode(x);
     var canvas = $('#output canvas');
 }
