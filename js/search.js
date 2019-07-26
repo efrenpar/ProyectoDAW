@@ -71,14 +71,14 @@ function mostrar_obras(autor) {
   });
   $('.error').removeClass('alert alert-danger').html('');
 }
-/*
-$.getJSON('https://project-daw-gallery.herokuapp.com/data/artistas',function(json) {
+
+$.getJSON('data/artistas.json',function(json) {
     var aux = json.escritores;
     console.log(aux);
     app.artistas=aux;
 });
-*/
-$.getJSON('https://project-daw-gallery.herokuapp.com/data/obras',function(json) {
+
+$.getJSON('data/obras.json',function(json) {
     var aux = json.obras;
     console.log(aux);
     app.obras=aux;
