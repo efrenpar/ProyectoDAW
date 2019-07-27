@@ -69,9 +69,10 @@
     padding: 40px 40px 40px 40px;
 }
 
-.login .modal-dialog-obras{
-    width: 600px;
-    padding: 40px 40px 40px 40px;
+.modal-dialog-obras{
+    width: 70%;
+    padding: 10% 0% 10% 30%;
+    
 }
 
 .login{
@@ -109,7 +110,28 @@
     right: 0;
 }
 
+.close_modal{
+    float:right;
+    color:crimson;
+    background: transparent;
+    font-weight: bold;
+    font-size: 10px;
+    opacity: 0.5;
+    text-shadow: #333333;
+    line-height: 1;
+    border:0;
+}
 
+.close_modal:hover{
+    color:black;
+    background: transparent;
+    font-weight: bold;
+    font-size: 10px;
+    opacity: 0.2;
+    text-shadow: #333333;
+    line-height: 1;
+    border:0;
+}
 .login .division span {
     color: #424242;
     font-size: 17px;

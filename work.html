@@ -51,7 +51,7 @@
 
 <body>
 	<div id="colorlib-page">
-		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"></a>
 		<aside id="colorlib-aside" class="border js-fullheight">
 			<h1 id="colorlib-logo"><a href="index.html"><img src="images/logo3.png"></a></h1>
 			<nav id="colorlib-main-menu">
@@ -127,9 +127,9 @@
 										<span class="formato-artistas">Movimiento: {{ post.movimiento}} </span>
 										<span class="formato-artistas">Campo: {{ post.campo}}</span>
 										<p class="icon">
-											<span><a onclick="openModal("+post.autor+")"><i class="icon-eye"></i>
+											<span class="mouse"><a v-on:click="openModal(post.autor)"><i class="icon-eye"></i>
 													Obras</a></span>
-											<span><a href="#"><i class="icon-heart"></i>100</a></span>
+											<span class="mouse"><a href="#"><i class="icon-heart"></i>100</a></span>
 										</p>
 									</div>
 								</div>
@@ -139,7 +139,7 @@
 
 					</div>
 					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+						<div class="col-md-12 " data-animate-effect="fadeInLeft">
 							<ul class="pagination">
 								<li class="disabled"><a href="#">&laquo;</a></li>
 								<li class="active"><a href="#">1</a></li>
@@ -156,19 +156,18 @@
 				<div id="get-in-touch" class="colorlib-bg-color">
 					<div class="colorlib-narrow-content">
 						<div class="row">
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<h2>Contáctanos!</h2>
+							<div class="col-md-6 " data-animate-effect="fadeInLeft">
+								<h2>¡Contáctanos!</h2>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 "
 								data-animate-effect="fadeInLeft">
-								<p class="colorlib-lead">Descubre y aprende sobre los mejores artistas Ecuatorianos
-									con
+								<p class="colorlib-lead">Descubre y aprende sobre los mejores artistas ecuatorianos con
 									nosotros.</p>
-								<p><a href="contact.html" class="btn btn-primary btn-learn">Enviar mensaje</a></p>
+								<p><a href="contact.html" class="btn btn-primary btn-learn">¡Enviar un mensaje!</a></p>
 							</div>
-
+	
 						</div>
 					</div>
 				</div>
@@ -180,7 +179,7 @@
 
 		</div>
 
-		<div class="modal fade login" id="modal_obras">
+		<div class="modal fade" id="modal_obras">
 
 		</div>
 

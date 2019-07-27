@@ -111,6 +111,15 @@ figure {
 .card-color{
 background-color: #e6e6e6
 }
+
+.mouse{
+  cursor:pointer;
+}
+.formato_artista{
+  text-align: center;
+  font-weight: bold;
+  color: #DC143C;
+}
 .img1-about{
   width: 100%;
   height: auto;
@@ -575,7 +584,7 @@ body.offcanvas {
 .colorlib-services,
 .colorlib-work,
 .colorlib-contact {
-  padding-top: 4em;
+  padding-top: 0em;
   padding-bottom: 0em !important;
   clear: both;
   width: 100%;
@@ -1533,14 +1542,16 @@ margin: 10px;
 	padding:0 !important;
 }
 
-
+.titulo_inicial{
+  color: white;
+}
 
 #primerModal{
 	
 	 background-color: #000 ;
 	 color:#fff;
 	 border:0.1px solid #fff;
-	 font-size: 200% !important;
+	 font-size: 15px !important;
 	 text-align: center
 	
 }
@@ -1548,32 +1559,29 @@ margin: 10px;
 [data-dismiss =  "modal"]:hover{
 	
 	color:#fff;
-	font-size: 200% !important;
+	font-size: 25px !important;
 	
 }
 
 [data-dismiss =  "modal"]{
 	
-	font-size: 30px !important;
+	font-size: 20px !important;
 }
 
 #okButton{
- outline: none;
-  background-image: none;
+
   background-color: transparent;
   color: #fff;
-  border: 1px solid transparent;
-  border-radius: 50px;
+  border: 0px solid transparent;
+  border-radius: 20px;
   box-shadow: none;
-  border-shadow: none;
   text-shadow: none;
-  height:55px;
-  font-size: 30px !important;
+  height:40px;
+  font-size: 20px !important;
 }
 
 #okButton:hover{
-	height:300%;
-	font-size: 200% !important;
+	font-size: 25px !important;
 }
 
 
@@ -1582,7 +1590,7 @@ margin: 10px;
 	
 	.modal-body{
 	
-   display: inline-flex;
+   display: block;
 	
   }
   

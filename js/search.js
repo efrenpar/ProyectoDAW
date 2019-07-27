@@ -4,8 +4,8 @@ var app = new Vue({
   data: {
     filterKey: 'todos',
     search: '',
-    artistas: null,
-    obras: null,
+    artistas:null ,
+    obras: null
   },
   computed: {
     filtroArtistas() {
@@ -41,29 +41,27 @@ var app = new Vue({
 
 function mostrar_obras(autor) {
   $('#modal_obras').empty();
-  $('#modal_obras').append('<div class="modal-dialog-obras login animated">'
-    + '<div class="modal-content"> <div class="modal-header"> <h4> Obras de artistas</h4> </div>' +
+  $('#modal_obras').append('<div class="modal-dialog-obras animated">'
+    + '<div class="modal-content"> <div class="modal-header"> <button type="button" class="close_modal" data-dismiss="modal" aria-hidden="true">&times;</button> <h3 class="formato_artista"> Obras de ' + autor + ' </h3> </div>' +
     '<div id="cuerpo" class="modal-body"></div></div></div>');
-  var artista = document.getElementById("cuerpo");
-
-
   var aux = app.obras;
 
   for (var i = 0; i < aux.length; i++) {
     if (aux[i].autor == autor) {
-      var imagenes = aux[i].imagenes;
+      var imagenes = aux[i].obras;
       console.log(imagenes);
       for (var j = 0; j < imagenes.length; j++) {
-        var img = document.createElement('img');
-        img.className = "obra_responsive";
         var res = imagenes[j].split("-");
-        img.src = "images/"+ res[0] + "/"+ imagenes[j];
-        artista.appendChild(img);
+        $("#cuerpo").append('<div class="card">'+
+        '<img class="obra_responsive" src="images/'+res[0] +'/'+ imagenes[j]+'" alt="Card image cap">'+
+        '<div class="card-body">'+
+          '<p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>'+
+       '</div></div>');
       }
     }
   }
 
-  
+
   $('#modal_obras').fadeOut('fast', function () {
     $('.loginBox').fadeIn('fast');
 
@@ -72,14 +70,13 @@ function mostrar_obras(autor) {
   $('.error').removeClass('alert alert-danger').html('');
 }
 
+
 $.getJSON('data/artistas.json',function(json) {
-    var aux = json.artistas;
-    console.log(aux);
-    app.artistas=aux;
+  var aux = json.artistas;
+  app.artistas=aux;
 });
 
 $.getJSON('data/obras.json',function(json) {
-    var aux = json.obras;
-    console.log(aux);
-    app.obras=aux;
+  var aux = json.obras;
+  app.obras=aux;
 });
