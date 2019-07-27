@@ -48,7 +48,7 @@ function mostrar_obras(autor) {
 
   for (var i = 0; i < aux.length; i++) {
     if (aux[i].autor == autor) {
-      var imagenes = aux[i].obras;
+      var imagenes = aux[i].imagenes;
       console.log(imagenes);
       for (var j = 0; j < imagenes.length; j++) {
         var res = imagenes[j].split("-");
