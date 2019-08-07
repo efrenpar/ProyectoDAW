@@ -31,18 +31,14 @@
         },
         {
     "autor": "Eduardo Kingman", "imagenes": [
-                "LPB-00109.jpg",
-                "LPB-00129.jpg",
-                "LPB-00147.jpg",
-                "LPB-00156.jpg",
-                "LPB-00218.jpg",
-                "LPB-00222.jpg",
-                "LPB-00259.jpg",
-                "LPB-00231.jpg"
-            ]
+                "KM-00121.jpg",
+                "KM-00130.jpg",
+                "KM-00173.jpg",
+                "KM-00215.jpg"
+                ]
         },
         {
-    "autor": "Carlos Catasse", "imagenes": [
+            "autor": "Hector Ramirez", "imagenes": [
                 "HRAM-00105.jpg",
                 "HRAM-00164.jpg",
                 "HRAM-00177.jpg",
@@ -51,6 +47,21 @@
                 "HRAM-00199.jpg",
                 "HRAM-00209.jpg",
                 "HRAM-00226.jpg"
+            ]
+        },
+        {
+            "autor": "Antonio Arias", "imagenes": [
+                "AAS-00100.jpg",
+                "AAS-00103.jpg",
+                "AAS-00105.jpg"
+            ]
+        },
+        {
+    "autor": "Carlos Catasse", "imagenes": [
+                "CTS-00194.jpg",
+                "CTS-00133.jpg",
+                "CTS-00137.jpg",
+                "CTS-00149.jpg"
             ]
         },
         {
