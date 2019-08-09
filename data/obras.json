@@ -9,12 +9,12 @@
                 "AV-00137.jpg",
                 "AV-00139.jpg"
             ], "descripcion": [
-                "titulo1",
-                "titulo2",
-                "titulo3",
-                "titulo4",
-                "titulo5",
-                "titulo6"
+                "Guitarrista",
+                "El Flautista 96",
+                "Jugango juntos 97",
+                "Hacha Precolombina 97",
+                "Rueca Precolomnina 97",
+                "Tauromaquia 97"
             ]
         },
         {
@@ -24,10 +24,10 @@
                 "ET-00160.jpg",
                 "ET-00163.jpg"
             ], "descripcion": [
-                "titulo1",
-                "titulo2",
-                "titulo3",
-                "titulo4"
+                "Arbustos c/2 insectos 96",
+                "Presagio de lluvia 96",
+                "Arbusto con salientes Geometricos",
+                "Amaneceres Gris 98"
             ]
         },
         {
@@ -40,13 +40,13 @@
                 "BPM-00310.jpg",
                 "BPM-00373.jpg"
             ], "descripcion": [
-                "titulo1",
-                "titulo2",
-                "titulo3",
-                "titulo4",
-                "titulo5",
-                "titulo6",
-                "titulo7"
+                "Maternidad",
+                "Maternidad",
+                "Bañista 96",
+                "En el bar",
+                "Paisaje 11-99",
+                "Serie de llave de agua 3-02",
+                "Billaristas"
             ]
         },
         {
@@ -73,14 +73,14 @@
                 "HRAM-00209.jpg",
                 "HRAM-00226.jpg"
             ] , "descripcion": [
-                "titulo1",
-                "titulo2",
-                "titulo3",
-                "titulo4",
-                "titulo5",
-                "titulo6",
-                "titulo7",
-                "titulo8"
+                "Pecador",
+                "Dia Cotidiano",
+                "Muchedumbre",
+                "Jarron con Flores",
+                "Mosaico en Rojo 04",
+                "Bodegon",
+                "Astracto",
+                "Nocturno"
                 ]
         },
         {
@@ -89,9 +89,9 @@
                 "AAS-00103.jpg",
                 "AAS-00105.jpg"
             ],  "descripcion": [
-                "titulo1",
-                "titulo2",
-                "titulo3"
+                "Sin titulo 95",
+                "Sin titulo 94",
+                "Sin titulo 95"
             ]
         {
     "autor": "Carlos Catasse", "imagenes": [
@@ -100,10 +100,10 @@
                 "CTS-00137.jpg",
                 "CTS-00149.jpg"
             ], "descripcion": [
-                "titulo1",
-                "titulo2",
-                "titulo3",
-                "titulo4"
+                "Marina",
+                "Esfumado 85",
+                "Esfumado I",
+                "Quitodifuminado"
             ]
         },
         {
@@ -115,12 +115,12 @@
                 "HULA-00141.jpg",
                 "HULA-00146.jpg"
             ],  "descripcion": [
-                "titulo1",
-                "titulo2",
-                "titulo3",
-                "titulo4",
-                "titulo5",
-                "titulo6"
+                "Abstracto",
+                "Caserio",
+                "Marina",
+                "Veleros",
+                "Arlequin",
+                "Payaso"
             ]
         }
     ]
