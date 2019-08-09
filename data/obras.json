@@ -8,6 +8,13 @@
                 "AV-00127.jpg",
                 "AV-00137.jpg",
                 "AV-00139.jpg"
+            ], "descripcion": [
+                "titulo1",
+                "titulo2",
+                "titulo3",
+                "titulo4",
+                "titulo5",
+                "titulo6"
             ]
         },
         {
@@ -16,6 +23,11 @@
                 "ET-00104.jpg",
                 "ET-00160.jpg",
                 "ET-00163.jpg"
+            ], "descripcion": [
+                "titulo1",
+                "titulo2",
+                "titulo3",
+                "titulo4"
             ]
         },
         {
@@ -27,6 +39,14 @@
                 "BPM-00208.jpg",
                 "BPM-00310.jpg",
                 "BPM-00373.jpg"
+            ], "descripcion": [
+                "titulo1",
+                "titulo2",
+                "titulo3",
+                "titulo4",
+                "titulo5",
+                "titulo6",
+                "titulo7"
             ]
         },
         {
@@ -35,7 +55,12 @@
                 "KM-00130.jpg",
                 "KM-00173.jpg",
                 "KM-00215.jpg"
-                ]
+            ], "descripcion": [
+                "titulo1",
+                "titulo2",
+                "titulo3",
+                "titulo4"
+            ]
         },
         {
             "autor": "Hector Ramirez", "imagenes": [
@@ -47,21 +72,38 @@
                 "HRAM-00199.jpg",
                 "HRAM-00209.jpg",
                 "HRAM-00226.jpg"
-            ]
+            ] , "descripcion": [
+                "titulo1",
+                "titulo2",
+                "titulo3",
+                "titulo4",
+                "titulo5",
+                "titulo6",
+                "titulo7",
+                "titulo8"
+                ]
         },
         {
             "autor": "Antonio Arias", "imagenes": [
                 "AAS-00100.jpg",
                 "AAS-00103.jpg",
                 "AAS-00105.jpg"
+            ],  "descripcion": [
+                "titulo1",
+                "titulo2",
+                "titulo3"
             ]
-        },
         {
     "autor": "Carlos Catasse", "imagenes": [
                 "CTS-00194.jpg",
                 "CTS-00133.jpg",
                 "CTS-00137.jpg",
                 "CTS-00149.jpg"
+            ], "descripcion": [
+                "titulo1",
+                "titulo2",
+                "titulo3",
+                "titulo4"
             ]
         },
         {
@@ -72,6 +114,13 @@
                 "HULA-00130.jpg",
                 "HULA-00141.jpg",
                 "HULA-00146.jpg"
+            ],  "descripcion": [
+                "titulo1",
+                "titulo2",
+                "titulo3",
+                "titulo4",
+                "titulo5",
+                "titulo6"
             ]
         }
     ]

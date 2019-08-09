@@ -52,11 +52,15 @@ function mostrar_obras(autor) {
       console.log(imagenes);
       for (var j = 0; j < imagenes.length; j++) {
         var res = imagenes[j].split("-");
+        console.log(descripcion);
+        for (var k = 0; k < descripcion.length; k++) {
+          console.log(k);
         $("#cuerpo").append('<div class="card">'+
         '<img class="obra_responsive" src="images/'+res[0] +'/'+ imagenes[j]+'" alt="Card image cap">'+
         '<div class="card-body">'+
-          '<p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>'+
+          '<p class="card-text">'+descripcion[k]+'</p>'+
        '</div></div>');
+        }
       }
     }
   }
