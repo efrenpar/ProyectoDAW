@@ -1,0 +1,298 @@
+{
+    "cuadros": [
+        {
+            "codigo": "KM-00121",
+            "titulo": "maternidad",
+            "medida": "70x50",
+            "tecnica" : "acuarela",
+            "precio" : "12000"
+        },
+        {
+            "codigo": "KM-00130",
+            "titulo": "paternindad",
+            "medida": "100x120",
+            "tecnica" : "oleo",
+            "precio" : "42000"
+        },
+        {
+            "codigo": "KM-00173",
+            "titulo": "Tranquilo/estar",
+            "medida": "100x50",
+            "tecnica" : "serigrafia",
+            "precio" : "1200"
+        },
+        {
+            "codigo": "KM-00215",
+            "titulo": "Oracion",
+            "medida": "18x25",
+            "tecnica" : "acuarela",
+            "precio" : "3000"
+        },
+        {
+            "codigo": "BPM-00104",
+            "titulo": "Maternidad",
+            "medida": "35X45",
+            "tecnica" : "Oleo",
+            "precio" : "500"
+        },
+        {
+            "codigo": "BPM-00128",
+            "titulo": "Maternidad",
+            "medida": "35X45",
+            "tecnica" : "Oleo",
+            "precio" : "500"
+        },
+        {
+            "codigo": "BPM-00165",
+            "titulo": "Bañista 96",
+            "medida": "150x80",
+            "tecnica" : "Oleo",
+            "precio" : "1200"
+        },
+        {
+            "codigo": "BPM-00196",
+            "titulo": "En el bar",
+            "medida": "70x90",
+            "tecnica" : "Oleo",
+            "precio" : "950"
+        },
+        {
+            "codigo": "BPM-00208",
+            "titulo": "Paisaje 11-99",
+            "medida": "40x50",
+            "tecnica" : "Oleo",
+            "precio" : "500"
+        },
+        {
+            "codigo": "BPM-00310",
+            "titulo": "Serie de llave de agua 3-02",
+            "medida": "50x60",
+            "tecnica" : "Oleo",
+            "precio" : "500"
+        },
+        {
+            "codigo": "BPM-00373",
+            "titulo": "Billaristas",
+            "medida": "70x80",
+            "tecnica" : "Oleo",
+            "precio" : "950"
+        },
+        {
+            "codigo": "ET-00101",
+            "titulo": "Arbusto C/2 INSECTOS 96",
+            "medida": "120X120",
+            "tecnica" : "Oleo",
+            "precio" : "12000"
+        },
+        {
+            "codigo": "ET-00104",
+            "titulo": "Presagio de lluvia 96",
+            "medida": "120X120",
+            "tecnica" : "Oleo",
+            "precio" : "12000"
+        },
+        {
+            "codigo": "ET-00160",
+            "titulo": "Arbustos con calientes geometricos",
+            "medida": "120X120",
+            "tecnica" : "Oleo",
+            "precio" : "12000"
+        },
+        {
+            "codigo": "ET-00163",
+            "titulo": "Amanecer gris 98",
+            "medida": "120X120",
+            "tecnica" : "Oleo",
+            "precio" : "12000"
+        },
+        {
+            "codigo": "AV-00109",
+            "titulo": "Guitarrista",
+            "medida": "40X50",
+            "tecnica" : "Mixta",
+            "precio" : "2800"
+        },
+        {
+            "codigo": "AV-00114",
+            "titulo": "El flautista 96",
+            "medida": "40X40",
+            "tecnica" : "Mixta",
+            "precio" : "2800"
+        },
+        {
+            "codigo": "AV-00119",
+            "titulo": "Jugando juntos 96",
+            "medida": "40X40",
+            "tecnica" : "Mixta",
+            "precio" : "2800"
+        },
+        {
+            "codigo": "AV-00127",
+            "titulo": "Hacha Precolombina 97",
+            "medida": "50X70",
+            "tecnica" : "Mixta",
+            "precio" : "3200"
+        },
+        {
+            "codigo": "AV-00137",
+            "titulo": "Rueca Precolombina 97",
+            "medida": "50X80",
+            "tecnica" : "Mixta",
+            "precio" : "3200"
+        },
+        {
+            "codigo": "AV-00139",
+            "titulo": "Tauromaquia 97",
+            "medida": "25x45",
+            "tecnica" : "Mixta",
+            "precio" : "2500"
+        },
+        {
+            "codigo": "HRAM-00105",
+            "titulo": "Pecador",
+            "medida": "90X100",
+            "tecnica" : "Oleo/lienzo",
+            "precio" : "1200"
+        },
+        {
+            "codigo": "HRAM-00164",
+            "titulo": "Dia Cotidiano",
+            "medida": "90X100",
+            "tecnica" : "Oleo/lienzo",
+            "precio" : "1200"
+        },
+        {
+            "codigo": "HRAM-00177",
+            "titulo": "Muchedumbre",
+            "medida": "90X100",
+            "tecnica" : "Oleo/lienzo",
+            "precio" : "1200"
+        },
+        {
+            "codigo": "HRAM-00178",
+            "titulo": "Jarron con Flores",
+            "medida": "90X100",
+            "tecnica" : "Oleo/lienzo",
+            "precio" : "1200"
+        },
+        {
+            "codigo": "HRAM-00186",
+            "titulo": "Mosaico en roJO",
+            "medida": "90X100",
+            "tecnica" : "Oleo/lienzo",
+            "precio" : "1200"
+        },
+        {
+            "codigo": "HRAM-00199",
+            "titulo": "Bodegon",
+            "medida": "95X85",
+            "tecnica" : "Oleo/lienzo",
+            "precio" : "1400"
+        },
+        {
+            "codigo": "HRAM-00209",
+            "titulo": "Abstracto",
+            "medida": "95X85",
+            "tecnica" : "Acrilico/Lona",
+            "precio" : "1400"
+        },
+        {
+            "codigo": "HRAM-00226",
+            "titulo": "Nocturno",
+            "medida": "95X85",
+            "tecnica" : "Acrilico/Lona",
+            "precio" : "1400"
+        },
+        {
+            "codigo": "HULA-00121",
+            "titulo": "Abstracto",
+            "medida": "100X90",
+            "tecnica" : "Oleo/Lienzo",
+            "precio" : "1200"
+        },
+        {
+            "codigo": "HULA-00123",
+            "titulo": "Caseiro",
+            "medida": "80X90",
+            "tecnica" : "Oleo/Lienzo",
+            "precio" : "1200"
+        },
+        {
+            "codigo": "HULA-00124",
+            "titulo": "Marina",
+            "medida": "80X90",
+            "tecnica" : "Oleo/Lienzo",
+            "precio" : "1200"
+        },
+        {
+            "codigo": "HULA-00130",
+            "titulo": "Veleros",
+            "medida": "80X90",
+            "tecnica" : "Acrilico/Lienzo",
+            "precio" : "1200"
+        },
+        {
+            "codigo": "HULA-00141,
+            "titulo": "Arlequin",
+            "medida": "80X90",
+            "tecnica" : "Acrilico/Lienzo",
+            "precio" : "1200"
+        },
+        {
+            "codigo": "HULA-00146",
+            "titulo": "Payasos",
+            "medida": "80X90",
+            "tecnica" : "Acrilico/Lienzo",
+            "precio" : "900"
+        },
+        {
+            "codigo": "CTS-00133",
+            "titulo": "Esfumado 85",
+            "medida": "60X80",
+            "tecnica" : "Oleo/Lienzo",
+            "precio" : "1400"
+        },
+        {
+            "codigo": "CTS-00137",
+            "titulo": "Esfumado I",
+            "medida": "40X50",
+            "tecnica" : "Oleo/Lienzo",
+            "precio" : "1400"
+        },
+        {
+            "codigo": "CTS-00149",
+            "titulo": "Quito difuminado",
+            "medida": "45x50",
+            "tecnica" : "Oleo/Lienzo",
+            "precio" : "1200"
+        },
+        {
+            "codigo": "CTS-00144",
+            "titulo": "Marina",
+            "medida": "60X80",
+            "tecnica" : "Oleo/Lienzo",
+            "precio" : "1200"
+        },
+        {
+            "codigo": "AAS-001030",
+            "titulo": "Sin titulo -95",
+            "medida": "110x110",
+            "tecnica" : "Acrilico",
+            "precio" : "3200"
+        },
+        {
+            "codigo": "AAS-00103",
+            "titulo": "Sin titulo -94",
+            "medida": "110x110",
+            "tecnica" : "Acrilico",
+            "precio" : "3200"
+        },
+
+        {
+            "codigo": "AAS-00103",
+            "titulo": "Sin titulo -95",
+            "medida": "100x85",
+            "tecnica" : "Acrilico",
+            "precio" : "2800"
+        },
+
