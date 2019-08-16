@@ -3,10 +3,6 @@
       {
         "name": "galeria",
         "script": "./app.js"
-      },
-      {
-        "name": "admin",
-        "script": "./node_modules/express-admin/app.js"
       }
     ]
   }
