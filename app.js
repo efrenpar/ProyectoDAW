@@ -6,30 +6,30 @@ const Sequelize = require("sequelize");
 const body_parser = require('body-parser');
 
 router.get('/',function(req,res){
-    res.sendFile(path.join(__dirname+'/public/index.html'));
+    res.sendFile(path.join(__dirname+'/index.html'));
     console.log("GET index.html");
 });
 
 router.get('/work',function(req,res){
-    res.sendFile(path.join(__dirname+'/public/work.html'));
+    res.sendFile(path.join(__dirname+'/work.html'));
     console.log("GET work.html");
 });
 
 router.get('/about',function(req,res){
-    res.sendFile(path.join(__dirname+'/public/about.html'));
+    res.sendFile(path.join(__dirname+'/about.html'));
     console.log("GET about.html");
 
 });
 
 router.get('/blog',function(req,res){
-    res.sendFile(path.join(__dirname+'/public/blog.html'));
+    res.sendFile(path.join(__dirname+'/blog.html'));
     console.log("GET blog.html");
 
 });
 
 
 router.get('/contact',function(req,res){
-    res.sendFile(path.join(__dirname+'/public/contact.html'));
+    res.sendFile(path.join(__dirname+'/contact.html'));
     console.log("GET contact.html");
 
 });
