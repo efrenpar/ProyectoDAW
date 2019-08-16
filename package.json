@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start":"pm2-runtime start pm2-apps.json --env production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
