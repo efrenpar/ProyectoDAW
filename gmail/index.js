@@ -38,7 +38,7 @@ router.post('/email',function(req,res){
           console.log('Email sent: ' + info.response);
         }
       });
-      res.redirect('back');
+      res.redirect('htttp://localhost:3000/contact');
 });
     
 
