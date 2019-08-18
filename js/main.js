@@ -227,8 +227,6 @@
 			}
 			
 		}
-		
-		
 	}
 	
 	var showGuide = function(){
@@ -239,6 +237,14 @@
 		
 		
 	}
+   
+	var alert_email=function(){
+
+		$('#btn_mensaje').click(function(){
+			alert("Mensaje enviado correctamente")
+		});
+	}
+
 
 	// Document on load.
 	$(function(){
@@ -253,6 +259,7 @@
 		owlCrouselFeatureSlide();
 		intro();
 		showGuide();
+		alert_email();
 	});
 
 

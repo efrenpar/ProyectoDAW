@@ -28,6 +28,7 @@ router.get('/blog',function(req,res){
 });
 
 
+
 router.get('/contact',function(req,res){
     res.sendFile(path.join(__dirname+'/contact.html'));
     console.log("GET contact.html");
