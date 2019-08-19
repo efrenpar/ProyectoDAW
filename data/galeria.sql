@@ -29,7 +29,6 @@ CREATE TYPE public.rol AS ENUM (
 );
 
 
-ALTER TYPE public.rol OWNER TO postgres;
 
 --
 -- TOC entry 599 (class 1247 OID 16467)
@@ -42,7 +41,6 @@ CREATE TYPE public.tipo AS ENUM (
 );
 
 
-ALTER TYPE public.tipo OWNER TO postgres;
 
 SET default_tablespace = '';
 
@@ -60,7 +58,6 @@ CREATE TABLE public.administrador (
 );
 
 
-ALTER TABLE public.administrador OWNER TO postgres;
 
 --
 -- TOC entry 196 (class 1259 OID 16461)
@@ -79,7 +76,6 @@ CREATE TABLE public.artista (
 );
 
 
-ALTER TABLE public.artista OWNER TO postgres;
 
 --
 -- TOC entry 202 (class 1259 OID 16502)
@@ -94,7 +90,6 @@ CREATE TABLE public.cliente (
 );
 
 
-ALTER TABLE public.cliente OWNER TO postgres;
 
 --
 -- TOC entry 201 (class 1259 OID 16497)
@@ -110,7 +105,6 @@ CREATE TABLE public.comentario (
 );
 
 
-ALTER TABLE public.comentario OWNER TO postgres;
 
 --
 -- TOC entry 200 (class 1259 OID 16492)
@@ -127,7 +121,6 @@ CREATE TABLE public.evento (
 );
 
 
-ALTER TABLE public.evento OWNER TO postgres;
 
 --
 -- TOC entry 203 (class 1259 OID 16507)
@@ -141,7 +134,6 @@ CREATE TABLE public.mensajes (
 );
 
 
-ALTER TABLE public.mensajes OWNER TO postgres;
 
 --
 -- TOC entry 197 (class 1259 OID 16477)
@@ -160,7 +152,6 @@ CREATE TABLE public.obras (
 );
 
 
-ALTER TABLE public.obras OWNER TO postgres;
 
 --
 -- TOC entry 198 (class 1259 OID 16482)
@@ -176,87 +167,6 @@ CREATE TABLE public.usuario (
     password character varying(20)
 );
 
-
-ALTER TABLE public.usuario OWNER TO postgres;
-
---
--- TOC entry 2866 (class 0 OID 16487)
--- Dependencies: 199
--- Data for Name: administrador; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.administrador (id_admin, registrodeactividad, ad_nickname) FROM stdin;
-\.
-
-
---
--- TOC entry 2863 (class 0 OID 16461)
--- Dependencies: 196
--- Data for Name: artista; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.artista (id, nombre, apellido, nacionalidad, fechadenacimiento, movimiento, campo, id_admin) FROM stdin;
-\.
-
-
---
--- TOC entry 2869 (class 0 OID 16502)
--- Dependencies: 202
--- Data for Name: cliente; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.cliente (id, ciudad, pais, cl_nickname) FROM stdin;
-\.
-
-
---
--- TOC entry 2868 (class 0 OID 16497)
--- Dependencies: 201
--- Data for Name: comentario; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.comentario (id_comentario, contenido, fecha, id_cliente, id_obras) FROM stdin;
-\.
-
-
---
--- TOC entry 2867 (class 0 OID 16492)
--- Dependencies: 200
--- Data for Name: evento; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.evento (id, titulo, fecha, "descripci¢n", localidad, id_admin) FROM stdin;
-\.
-
-
---
--- TOC entry 2870 (class 0 OID 16507)
--- Dependencies: 203
--- Data for Name: mensajes; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.mensajes (id_mensaje, contenido, id_cliente) FROM stdin;
-\.
-
-
---
--- TOC entry 2864 (class 0 OID 16477)
--- Dependencies: 197
--- Data for Name: obras; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.obras (cod, nombre, tematica, precio, artista, alto, ancho, tipo_fiesta) FROM stdin;
-\.
-
-
---
--- TOC entry 2865 (class 0 OID 16482)
--- Dependencies: 198
--- Data for Name: usuario; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.usuario (nickname, nombre, apellido, rol_usuario, correo, password) FROM stdin;
-\.
 
 
 --

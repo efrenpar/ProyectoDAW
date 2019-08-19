@@ -1,6 +1,6 @@
 {
     "pg": {
-        "database": "Taller3",
+        "database": "galeria",
         "user": "postgres",
         "password": "admin",
         "schema": "public"

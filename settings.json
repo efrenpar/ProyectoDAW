@@ -1,19 +1,51 @@
 {
-    "comida": {
-        "slug": "comida",
+    "obras": {
+        "slug": "obras",
         "table": {
-            "name": "comida",
-            "pk": "id",
-            "verbose": "comida"
+            "name": "obras",
+            "pk": "cod",
+            "verbose": "obras"
         },
         "columns": [
+            {
+                "name": "cod",
+                "verbose": "cod",
+                "control": {
+                    "text": true
+                },
+                "type": "char(20)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
             {
                 "name": "nombre",
                 "verbose": "nombre",
                 "control": {
                     "text": true
                 },
-                "type": "varchar(null)",
+                "type": "varchar(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "tematica",
+                "verbose": "tematica",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
                 "allowNull": true,
                 "defaultValue": null,
                 "listview": {
@@ -29,7 +61,7 @@
                 "control": {
                     "text": true
                 },
-                "type": "decimal",
+                "type": "double",
                 "allowNull": true,
                 "defaultValue": null,
                 "listview": {
@@ -40,8 +72,8 @@
                 }
             },
             {
-                "name": "cantidad",
-                "verbose": "cantidad",
+                "name": "artista",
+                "verbose": "artista",
                 "control": {
                     "text": true
                 },
@@ -55,6 +87,242 @@
                     "show": true
                 }
             },
+            {
+                "name": "alto",
+                "verbose": "alto",
+                "control": {
+                    "text": true
+                },
+                "type": "double",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "ancho",
+                "verbose": "ancho",
+                "control": {
+                    "text": true
+                },
+                "type": "double",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "tipo_fiesta",
+                "verbose": "tipo_fiesta",
+                "control": {
+                    "text": true
+                },
+                "type": "USER-DEFINED",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "comentario": {
+        "slug": "comentario",
+        "table": {
+            "name": "comentario",
+            "pk": "id_comentario",
+            "verbose": "comentario"
+        },
+        "columns": [
+            {
+                "name": "id_comentario",
+                "verbose": "id_comentario",
+                "control": {
+                    "text": true
+                },
+                "type": "integer",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "contenido",
+                "verbose": "contenido",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(200)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "fecha",
+                "verbose": "fecha",
+                "control": {
+                    "text": true
+                },
+                "type": "date",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "id_cliente",
+                "verbose": "id_cliente",
+                "control": {
+                    "text": true
+                },
+                "type": "integer",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "id_obras",
+                "verbose": "id_obras",
+                "control": {
+                    "text": true
+                },
+                "type": "char(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "administrador": {
+        "slug": "administrador",
+        "table": {
+            "name": "administrador",
+            "pk": "id_admin",
+            "verbose": "administrador"
+        },
+        "columns": [
+            {
+                "name": "id_admin",
+                "verbose": "id_admin",
+                "control": {
+                    "text": true
+                },
+                "type": "integer",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "registrodeactividad",
+                "verbose": "registrodeactividad",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "ad_nickname",
+                "verbose": "ad_nickname",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "evento": {
+        "slug": "evento",
+        "table": {
+            "name": "evento",
+            "pk": "id",
+            "verbose": "evento"
+        },
+        "columns": [
             {
                 "name": "id",
                 "verbose": "id",
@@ -63,6 +331,502 @@
                 },
                 "type": "integer",
                 "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "titulo",
+                "verbose": "titulo",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "fecha",
+                "verbose": "fecha",
+                "control": {
+                    "text": true
+                },
+                "type": "date",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "descripci¢n",
+                "verbose": "descripci¢n",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(40)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "localidad",
+                "verbose": "localidad",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "id_admin",
+                "verbose": "id_admin",
+                "control": {
+                    "text": true
+                },
+                "type": "integer",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "artista": {
+        "slug": "artista",
+        "table": {
+            "name": "artista",
+            "pk": "id",
+            "verbose": "artista"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "integer",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "nombre",
+                "verbose": "nombre",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "apellido",
+                "verbose": "apellido",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "nacionalidad",
+                "verbose": "nacionalidad",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "fechadenacimiento",
+                "verbose": "fechadenacimiento",
+                "control": {
+                    "text": true
+                },
+                "type": "date",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "movimiento",
+                "verbose": "movimiento",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(10)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "campo",
+                "verbose": "campo",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(10)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "id_admin",
+                "verbose": "id_admin",
+                "control": {
+                    "text": true
+                },
+                "type": "integer",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "mensajes": {
+        "slug": "mensajes",
+        "table": {
+            "name": "mensajes",
+            "pk": "id_mensaje",
+            "verbose": "mensajes"
+        },
+        "columns": [
+            {
+                "name": "id_mensaje",
+                "verbose": "id_mensaje",
+                "control": {
+                    "text": true
+                },
+                "type": "integer",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "contenido",
+                "verbose": "contenido",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(200)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "id_cliente",
+                "verbose": "id_cliente",
+                "control": {
+                    "text": true
+                },
+                "type": "integer",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "usuario": {
+        "slug": "usuario",
+        "table": {
+            "name": "usuario",
+            "pk": "nickname",
+            "verbose": "usuario"
+        },
+        "columns": [
+            {
+                "name": "nickname",
+                "verbose": "nickname",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "nombre",
+                "verbose": "nombre",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "apellido",
+                "verbose": "apellido",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "rol_usuario",
+                "verbose": "rol_usuario",
+                "control": {
+                    "text": true
+                },
+                "type": "USER-DEFINED",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "correo",
+                "verbose": "correo",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "password",
+                "verbose": "password",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "cliente": {
+        "slug": "cliente",
+        "table": {
+            "name": "cliente",
+            "pk": "id",
+            "verbose": "cliente"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "integer",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "ciudad",
+                "verbose": "ciudad",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "pais",
+                "verbose": "pais",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "cl_nickname",
+                "verbose": "cl_nickname",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": true,
                 "defaultValue": null,
                 "listview": {
                     "show": true

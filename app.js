@@ -6,23 +6,34 @@ const Sequelize = require("sequelize");
 const body_parser = require('body-parser');
 
 router.get('/',function(req,res){
-    res.sendFile(path.join(__dirname+'/index.html'));
+    res.sendFile(path.join(__dirname+'/public/index.html'));
     console.log("GET index.html");
 });
 
 router.get('/work',function(req,res){
-    res.sendFile(path.join(__dirname+'/work.html'));
+    res.sendFile(path.join(__dirname+'/public/work.html'));
     console.log("GET work.html");
 });
 
+router.get('/qrcode',function(req,res){
+    res.sendFile(path.join(__dirname+'/public/qrcode.html'));
+    console.log("GET qrcode.html");
+});
+
+router.get('/dashboard',function(req,res){
+    res.sendFile(path.join(__dirname+'/public/dashboard.html'));
+    console.log("GET qrcode.html");
+});
+
+
 router.get('/about',function(req,res){
-    res.sendFile(path.join(__dirname+'/about.html'));
+    res.sendFile(path.join(__dirname+'/public/about.html'));
     console.log("GET about.html");
 
 });
 
 router.get('/blog',function(req,res){
-    res.sendFile(path.join(__dirname+'/blog.html'));
+    res.sendFile(path.join(__dirname+'/public/blog.html'));
     console.log("GET blog.html");
 
 });
@@ -30,7 +41,7 @@ router.get('/blog',function(req,res){
 
 
 router.get('/contact',function(req,res){
-    res.sendFile(path.join(__dirname+'/contact.html'));
+    res.sendFile(path.join(__dirname+'/public/contact.html'));
     console.log("GET contact.html");
 
 });
