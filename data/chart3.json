@@ -1,0 +1,120 @@
+{
+
+    "chart": {
+        "caption": "Los eventos con mayor acogida son realizados en Guayaquil($55.5k)",
+        "showplotborder": "1",
+        "plotfillalpha": "60",
+        "hoverfillcolor": "#CCCCCC",
+        "numberprefix": "$",
+        "plottooltext": "Las ventas en <b>$label</b> fueron de <b>$$valueK</b>, lo cual representa un $percentValue de su categoría",
+        "theme": "fusion"
+      },
+      "category": [
+        {
+          "label": "Ecuador",
+          "tooltext": "Por favor pase sobre las subcatergorías para ver detalles",
+          "color": "#ffffff",
+          "value": "150",
+          "category": [
+            {
+              "label": "Guayaquil",
+              "color": "#f8bd19",
+              "value": "55.5",
+              "category": [
+                {
+                  "label": "Museo Presley",
+                  "color": "#f8bd19",
+                  "value": "11.1"
+                },
+                {
+                  "label": "M.Municipal",
+                  "color": "#f8bd19",
+                  "value": "20.75"
+                },
+                {
+                  "label": "Red Solare ",
+                  "color": "#f8bd19",
+                  "value": "9.99"
+                },
+                {
+                  "label": "Expo.2019",
+                  "color": "#f8bd19",
+                  "value": "13.66"
+                }
+              ]
+            },
+            {
+              "label": "Quito",
+              "color": "#33ccff",
+              "value": "42",
+              "category": [
+                {
+                  "label": "Museo Mariño",
+                  "color": "#33ccff",
+                  "value": "10.08"
+                },
+                {
+                  "label": "Pilar Bustos",
+                  "color": "#33ccff",
+                  "value": "18.9"
+                },
+                {
+                  "label": "S.de Papel",
+                  "color": "#33ccff",
+                  "value": "6.3"
+                },
+                {
+                  "label": "M.Municipal",
+                  "color": "#33ccff",
+                  "value": "6.72"
+                }
+              ]
+            },
+            {
+              "label": "Machala",
+              "color": "#ffcccc",
+              "value": "22.5",
+              "category": [
+                {
+                  "label": "M.Flaviker",
+                  "color": "#ffcccc",
+                  "value": "6.45"
+                },
+                {
+                  "label": "Mirage Dark",
+                  "color": "#ffcccc",
+                  "value": "9.3"
+                },
+                {
+                  "label": "Municipio",
+                  "color": "#ffcccc",
+                  "value": "6.75"
+                }
+              ]
+            },
+            {
+              "label": "Cuenca",
+              "color": "#ccff66",
+              "value": "30",
+              "category": [
+                {
+                  "label": "Malecon",
+                  "color": "#ccff66",
+                  "value": "8.1"
+                },
+                {
+                  "label": "Express",
+                  "color": "#ccff66",
+                  "value": "10.5"
+                },
+                {
+                  "label": "M.Catedral",
+                  "color": "#ccff66",
+                  "value": "11.4"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }

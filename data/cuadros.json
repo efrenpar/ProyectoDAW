@@ -25,7 +25,7 @@
             "codigo": "KM-00215",
             "titulo": "Oracion",
             "medida": "18x25",
-            "tecnica" : "acuarela",
+            "tecnica" :"acuarela",
             "precio" : "3000"
         },
         {
@@ -232,7 +232,7 @@
             "precio" : "1200"
         },
         {
-            "codigo": "HULA-00141,
+            "codigo": "HULA-00141",
             "titulo": "Arlequin",
             "medida": "80X90",
             "tecnica" : "Acrilico/Lienzo",
@@ -294,5 +294,6 @@
             "medida": "100x85",
             "tecnica" : "Acrilico",
             "precio" : "2800"
-        },
+        }]
+    }
 

@@ -1,0 +1,36 @@
+{
+    "chart": {
+        "caption": "Las obras de Enrique Tábara son las más vistas",
+        "subCaption": "",
+        "xAxisName": "Artistas",
+        "yAxisName": "Visualizaciones",
+        "numberSuffix": "K",
+        "theme": "fusion"
+    },
+    "data": [
+        {
+            "label": "E.Tábara",
+            "value": "2.9"
+        },
+        {
+            "label": "A.Villacis",
+            "value": "2.6"
+        },
+        {
+            "label": "E.Kigman",
+            "value": "1.8"
+        },
+        {
+            "label": "B.Peñafiel",
+            "value": "1.4"
+        },
+        {
+            "label": "H.Ramirez",
+            "value": "1.1"
+        },
+        {
+            "label": "M.Velastegui",
+            "value": "0.1"
+        }
+    ]
+}

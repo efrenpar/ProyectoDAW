@@ -1,0 +1,37 @@
+{
+    "chart": {
+        "caption": "Se recomienda un reabastecimiento del inventario",
+        "lowerlimit": "0",
+        "upperlimit": "100",
+        "showvalue": "1",
+        "numbersuffix": "%",
+        "theme": "fusion",
+        "showtooltip": "0"
+      },
+      "colorrange": {
+        "color": [
+          {
+            "minvalue": "0",
+            "maxvalue": "33.33",
+            "code": "#F2726F"
+          },
+          {
+            "minvalue": "33.33",
+            "maxvalue": "66",
+            "code": "#FFC533"
+          },
+          {
+            "minvalue": "66",
+            "maxvalue": "100",
+            "code": "#62B58F"
+          }
+        ]
+      },
+      "dials": {
+        "dial": [
+          {
+            "value": "55"
+          }
+        ]
+      }
+    }

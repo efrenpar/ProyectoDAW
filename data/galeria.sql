@@ -115,7 +115,7 @@ CREATE TABLE public.evento (
     id integer NOT NULL,
     titulo character varying(20),
     fecha date,
-    "descripci¢n" character varying(40),
+    "descripcion" character varying(40),
     localidad character varying(20),
     id_admin integer
 );

@@ -25,6 +25,11 @@ router.get('/dashboard',function(req,res){
     console.log("GET qrcode.html");
 });
 
+router.get('/correos',function(req,res){
+    res.sendFile(path.join(__dirname+'/public/correos.html'));
+});
+
+
 
 router.get('/about',function(req,res){
     res.sendFile(path.join(__dirname+'/public/about.html'));
@@ -38,15 +43,16 @@ router.get('/blog',function(req,res){
 
 });
 
-
+router.get('/chart/:id',function(req,res){
+  console.log(req.params.id);  
+res.sendFile(path.join(__dirname+'/data/chart'+req.params.id+".json"));
+});
 
 router.get('/contact',function(req,res){
     res.sendFile(path.join(__dirname+'/public/contact.html'));
     console.log("GET contact.html");
 
 });
-
-
 
 app.use('/css',express.static('css'));
 app.use('/images',express.static('images'));
