@@ -40,7 +40,7 @@ router.post('/email', function (req, res) {
   });
   res.redirect('htttp://localhost:3000/contact');
 });
-
+/*
 function getEmails() {
   // If modifying these scopes, delete token.json.
   const SCOPES = ['https://www.googleapis.com/auth/gmail.readonly'];
@@ -62,7 +62,7 @@ function getEmails() {
    * given callback function.
    * @param {Object} credentials The authorization client credentials.
    * @param {function} callback The callback to call with the authorized client.
-   */
+   
   function authorize(credentials, callback) {
     const { client_secret, client_id, redirect_uris } = credentials.installed;
     const oAuth2Client = new google.auth.OAuth2(
@@ -81,7 +81,7 @@ function getEmails() {
    * execute the given callback with the authorized OAuth2 client.
    * @param {google.auth.OAuth2} oAuth2Client The OAuth2 client to get token for.
    * @param {getEventsCallback} callback The callback for the authorized client.
-   */
+   
   function getNewToken(oAuth2Client, callback) {
     const authUrl = oAuth2Client.generateAuthUrl({
       access_type: 'offline',
@@ -111,7 +111,7 @@ function getEmails() {
    * Lists the labels in the user's account.
    *
    * @param {google.auth.OAuth2} auth An authorized OAuth2 client.
-   */
+   
 
 
   function listEmails(auth) {
@@ -153,7 +153,7 @@ function getEmails() {
       }
     });
   }
-}
+}*/
 
 app.use('/gmail', router);
 const host = '0.0.0.0';
