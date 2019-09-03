@@ -21,11 +21,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     artista: {
       type: DataTypes.INTEGER,
-      allowNull: true,
-      references: {
-        model: 'artista',
-        key: 'id'
-      }
+      allowNull: true
     },
     alto: {
       type: DataTypes.DOUBLE,
@@ -40,7 +36,6 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     }
   }, {
-    tableName: 'obras',
-    timestamps: false
+    tableName: 'obras'
   });
 };

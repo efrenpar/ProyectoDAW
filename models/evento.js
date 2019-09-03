@@ -15,7 +15,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.DATEONLY,
       allowNull: true
     },
-    descripci¢n: {
+    descripcion: {
       type: DataTypes.STRING,
       allowNull: true
     },
@@ -32,7 +32,6 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   }, {
-    tableName: 'evento',
-    timestamps: false
+    tableName: 'evento'
   });
 };

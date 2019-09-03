@@ -14,8 +14,6 @@ app.use(bodyParser.json());
 var router = express.Router();
 
 router.post('/email', function (req, res) {
-
-  console.log("POST EMAIL");
   var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {

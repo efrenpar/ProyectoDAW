@@ -20,7 +20,6 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   }, {
-    tableName: 'mensajes',
-    timestamps: false
+    tableName: 'mensajes'
   });
 };

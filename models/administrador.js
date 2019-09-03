@@ -20,7 +20,6 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   }, {
-    tableName: 'administrador',
-    timestamps: false
+    tableName: 'administrador'
   });
 };

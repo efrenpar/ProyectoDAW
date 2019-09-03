@@ -32,7 +32,6 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   }, {
-    tableName: 'comentario',
-    timestamps: false
+    tableName: 'comentario'
   });
 };

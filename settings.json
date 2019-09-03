@@ -13,7 +13,7 @@
                 "control": {
                     "text": true
                 },
-                "type": "char(20)",
+                "type": "char(100)",
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
@@ -29,7 +29,7 @@
                 "control": {
                     "text": true
                 },
-                "type": "varchar(20)",
+                "type": "varchar(100)",
                 "allowNull": true,
                 "defaultValue": null,
                 "listview": {
@@ -45,7 +45,7 @@
                 "control": {
                     "text": true
                 },
-                "type": "varchar(20)",
+                "type": "varchar(100)",
                 "allowNull": true,
                 "defaultValue": null,
                 "listview": {
@@ -225,7 +225,7 @@
                 "control": {
                     "text": true
                 },
-                "type": "char(20)",
+                "type": "char(100)",
                 "allowNull": true,
                 "defaultValue": null,
                 "listview": {
@@ -247,21 +247,21 @@
             "readonly": false
         }
     },
-    "administrador": {
-        "slug": "administrador",
+    "artista": {
+        "slug": "artista",
         "table": {
-            "name": "administrador",
-            "pk": "id_admin",
-            "verbose": "administrador"
+            "name": "artista",
+            "pk": "id",
+            "verbose": "artista"
         },
         "columns": [
             {
-                "name": "id_admin",
-                "verbose": "id_admin",
+                "name": "id",
+                "verbose": "id",
                 "control": {
                     "text": true
                 },
-                "type": "integer",
+                "type": "varchar(15)",
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
@@ -272,12 +272,12 @@
                 }
             },
             {
-                "name": "registrodeactividad",
-                "verbose": "registrodeactividad",
+                "name": "nombre",
+                "verbose": "nombre",
                 "control": {
                     "text": true
                 },
-                "type": "varchar(20)",
+                "type": "varchar(100)",
                 "allowNull": true,
                 "defaultValue": null,
                 "listview": {
@@ -288,12 +288,92 @@
                 }
             },
             {
-                "name": "ad_nickname",
-                "verbose": "ad_nickname",
+                "name": "apellido",
+                "verbose": "apellido",
                 "control": {
                     "text": true
                 },
-                "type": "varchar(20)",
+                "type": "varchar(100)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "nacionalidad",
+                "verbose": "nacionalidad",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(100)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "fechadenacimiento",
+                "verbose": "fechadenacimiento",
+                "control": {
+                    "text": true
+                },
+                "type": "date",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "movimiento",
+                "verbose": "movimiento",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(100)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "campo",
+                "verbose": "campo",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(100)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "id_admin",
+                "verbose": "id_admin",
+                "control": {
+                    "text": true
+                },
+                "type": "integer",
                 "allowNull": true,
                 "defaultValue": null,
                 "listview": {
@@ -345,7 +425,7 @@
                 "control": {
                     "text": true
                 },
-                "type": "varchar(20)",
+                "type": "varchar(100)",
                 "allowNull": true,
                 "defaultValue": null,
                 "listview": {
@@ -372,8 +452,8 @@
                 }
             },
             {
-                "name": "descripci¢n",
-                "verbose": "descripci¢n",
+                "name": "descripcion",
+                "verbose": "descripcion",
                 "control": {
                     "text": true
                 },
@@ -393,7 +473,7 @@
                 "control": {
                     "text": true
                 },
-                "type": "varchar(20)",
+                "type": "varchar(100)",
                 "allowNull": true,
                 "defaultValue": null,
                 "listview": {
@@ -431,17 +511,17 @@
             "readonly": false
         }
     },
-    "artista": {
-        "slug": "artista",
+    "administrador": {
+        "slug": "administrador",
         "table": {
-            "name": "artista",
-            "pk": "id",
-            "verbose": "artista"
+            "name": "administrador",
+            "pk": "id_admin",
+            "verbose": "administrador"
         },
         "columns": [
             {
-                "name": "id",
-                "verbose": "id",
+                "name": "id_admin",
+                "verbose": "id_admin",
                 "control": {
                     "text": true
                 },
@@ -456,12 +536,12 @@
                 }
             },
             {
-                "name": "nombre",
-                "verbose": "nombre",
+                "name": "registrodeactividad",
+                "verbose": "registrodeactividad",
                 "control": {
                     "text": true
                 },
-                "type": "varchar(20)",
+                "type": "varchar(100)",
                 "allowNull": true,
                 "defaultValue": null,
                 "listview": {
@@ -472,92 +552,12 @@
                 }
             },
             {
-                "name": "apellido",
-                "verbose": "apellido",
+                "name": "ad_nickname",
+                "verbose": "ad_nickname",
                 "control": {
                     "text": true
                 },
-                "type": "varchar(20)",
-                "allowNull": true,
-                "defaultValue": null,
-                "listview": {
-                    "show": true
-                },
-                "editview": {
-                    "show": true
-                }
-            },
-            {
-                "name": "nacionalidad",
-                "verbose": "nacionalidad",
-                "control": {
-                    "text": true
-                },
-                "type": "varchar(20)",
-                "allowNull": true,
-                "defaultValue": null,
-                "listview": {
-                    "show": true
-                },
-                "editview": {
-                    "show": true
-                }
-            },
-            {
-                "name": "fechadenacimiento",
-                "verbose": "fechadenacimiento",
-                "control": {
-                    "text": true
-                },
-                "type": "date",
-                "allowNull": true,
-                "defaultValue": null,
-                "listview": {
-                    "show": true
-                },
-                "editview": {
-                    "show": true
-                }
-            },
-            {
-                "name": "movimiento",
-                "verbose": "movimiento",
-                "control": {
-                    "text": true
-                },
-                "type": "varchar(10)",
-                "allowNull": true,
-                "defaultValue": null,
-                "listview": {
-                    "show": true
-                },
-                "editview": {
-                    "show": true
-                }
-            },
-            {
-                "name": "campo",
-                "verbose": "campo",
-                "control": {
-                    "text": true
-                },
-                "type": "varchar(10)",
-                "allowNull": true,
-                "defaultValue": null,
-                "listview": {
-                    "show": true
-                },
-                "editview": {
-                    "show": true
-                }
-            },
-            {
-                "name": "id_admin",
-                "verbose": "id_admin",
-                "control": {
-                    "text": true
-                },
-                "type": "integer",
+                "type": "varchar(100)",
                 "allowNull": true,
                 "defaultValue": null,
                 "listview": {
@@ -661,7 +661,7 @@
                 "control": {
                     "text": true
                 },
-                "type": "varchar(20)",
+                "type": "varchar(100)",
                 "allowNull": false,
                 "defaultValue": null,
                 "listview": {
@@ -677,7 +677,7 @@
                 "control": {
                     "text": true
                 },
-                "type": "varchar(20)",
+                "type": "varchar(100)",
                 "allowNull": true,
                 "defaultValue": null,
                 "listview": {
@@ -693,7 +693,7 @@
                 "control": {
                     "text": true
                 },
-                "type": "varchar(20)",
+                "type": "varchar(100)",
                 "allowNull": true,
                 "defaultValue": null,
                 "listview": {
@@ -725,7 +725,7 @@
                 "control": {
                     "text": true
                 },
-                "type": "varchar(20)",
+                "type": "varchar(100)",
                 "allowNull": true,
                 "defaultValue": null,
                 "listview": {
@@ -741,7 +741,7 @@
                 "control": {
                     "text": true
                 },
-                "type": "varchar(20)",
+                "type": "varchar(100)",
                 "allowNull": true,
                 "defaultValue": null,
                 "listview": {
@@ -793,7 +793,7 @@
                 "control": {
                     "text": true
                 },
-                "type": "varchar(20)",
+                "type": "varchar(100)",
                 "allowNull": true,
                 "defaultValue": null,
                 "listview": {
@@ -809,7 +809,7 @@
                 "control": {
                     "text": true
                 },
-                "type": "varchar(20)",
+                "type": "varchar(100)",
                 "allowNull": true,
                 "defaultValue": null,
                 "listview": {
@@ -825,7 +825,7 @@
                 "control": {
                     "text": true
                 },
-                "type": "varchar(20)",
+                "type": "varchar(100)",
                 "allowNull": true,
                 "defaultValue": null,
                 "listview": {
