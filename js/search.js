@@ -49,18 +49,13 @@ function mostrar_obras(autor) {
   for (var i = 0; i < aux.length; i++) {
     if (aux[i].autor == autor) {
       var imagenes = aux[i].imagenes;
-      console.log(imagenes);
       for (var j = 0; j < imagenes.length; j++) {
         var res = imagenes[j].split("-");
-        console.log(descripcion);
-        for (var k = 0; k < descripcion.length; k++) {
-          console.log(k);
         $("#cuerpo").append('<div class="card">'+
         '<img class="obra_responsive" src="images/'+res[0] +'/'+ imagenes[j]+'" alt="Card image cap">'+
         '<div class="card-body">'+
-          '<p class="card-text">'+descripcion[k]+'</p>'+
+          '<p class="card-text">hhhhhh</p>'+
        '</div></div>');
-        }
       }
     }
   }

@@ -1,0 +1,79 @@
+{
+    "obras": [
+        {
+    "autor": "Anibal Villacis", "imagenes": [
+                "AV-00109.jpg",
+                "AV-00109.jpg",
+                "AV-00114.jpg",
+                "AV-00119.jpg",
+                "AV-00119.jpg",
+                "AV-00127.jpg",
+                "AV-00137.jpg",
+                "AV-00139.jpg"
+            ]
+        },
+        {
+    "autor": "Enrique Tábara", "imagenes": [
+                "ET-00101.jpg",
+                "ET-00104.jpg",
+                "ET-00160.jpg",
+                "ET-00163.jpg"
+            ]
+        },
+        {
+    "autor": "Bolivar Peñafiel", "imagenes": [
+                "BPM-00104.jpg",
+                "BPM-00128.jpg",
+                "BPM-00165.jpg",
+                "BPM-00196.jpg",
+                "BPM-00208.jpg",
+                "BPM-00310.jpg",
+                "BPM-00373.jpg"
+            ]
+        },
+        {
+    "autor": "Eduardo Kingman", "imagenes": [
+                "KM-00121.jpg",
+                "KM-00130.jpg",
+                "KM-00173.jpg",
+                "KM-00215.jpg"
+            ]
+        },
+        {
+    "autor": "Carlos Catasse", "imagenes": [
+               "CTS-00104.jpg",
+               "CTS-00133.jpg",
+               "CTS-00137.jpg",
+               "CTS-00149.jpg"
+            ]
+        },
+        {
+    "autor": "Manuel Velastegui", "imagenes": [
+                "HULA-00121.jpg",
+                "HULA-00123.jpg",
+                "HULA-00124.jpg",
+                "HULA-00130.jpg",
+                "HULA-00141.jpg",
+                "HULA-00146.jpg"
+            ]
+        },
+        {
+        "autor": "Antonio Arias","imagenes":[
+            "AAS-00100.jpg",
+            "AAS-00103.jpg",
+            "AAS-00105.jpg"]
+        },
+        {
+        "autor":"Hector Ramirez","imagenes":[
+            "HRAM-00105.jpg",
+            "HRAM-00164.jpg",
+            "HRAM-00177.jpg",
+            "HRAM-00178.jpg",
+            "HRAM-00186.jpg",
+            "HRAM-00199.jpg",
+            "HRAM-00209.jpg",
+            "HRAM-00226.jpg"
+        ]
+        }
+    ]
+}
