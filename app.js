@@ -1,10 +1,12 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const path = require("path");
 var router = express.Router();
 const body_parser = require('body-parser');
 artistas = require('./controllers/artistas');
 cuadros = require('./controllers/cuadros');
+usuario = require('./controllers/usuario');
 
 router.get('/',function(req,res){
     res.sendFile(path.join(__dirname+'/public/index.html'));
@@ -32,6 +34,7 @@ router.get('/reportes',function(req,res){
 
 router.get('/artistas',artistas.index);
 router.post('/cuadros/:idArtista',cuadros.find);
+router.get('/usuarios',usuario.index)
 
 router.get('/about',function(req,res){
     res.sendFile(path.join(__dirname+'/public/about.html'));
@@ -51,6 +54,15 @@ router.get('/contact',function(req,res){
     res.sendFile(path.join(__dirname+'/public/contact.html'));
 });
 
+router.get('/login',function(req,res){
+    res.sendFile(path.join(__dirname+'/public/loginForm.html'));
+});
+
+router.get('/perfil',function(req,res){
+    res.sendFile(path.join(__dirname+'/public/perfil.html'));
+});
+
+app.use(cors())
 app.use('/css',express.static('css'));
 app.use('/images',express.static('images'));
 app.use('/js',express.static('js'));

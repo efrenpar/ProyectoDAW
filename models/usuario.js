@@ -16,7 +16,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     rol_usuario: {
-      type: DataTypes.ENUM("administrador","cliente"),
+      type: DataTypes.STRING,
       allowNull: true
     },
     correo: {
