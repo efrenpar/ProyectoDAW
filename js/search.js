@@ -52,9 +52,9 @@ function mostrar_obras(autor) {
       for (var j = 0; j < imagenes.length; j++) {
         var res = imagenes[j].split("-");
         $("#cuerpo").append('<div class="card">'+
-        '<img class="obra_responsive" src="images/'+res[0] +'/'+ imagenes[j]+'" alt="Card image cap">'+
+        '<img class="obra_responsive" src="/uploads/images/'+ imagenes[j]+'" alt="Card image cap">'+
         '<div class="card-body">'+
-          '<p class="card-text">hhhhhh</p>'+
+          '<p class="card-text">Descripción</p>'+
        '</div></div>');
       }
     }

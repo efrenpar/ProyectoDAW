@@ -75,8 +75,8 @@ var app2 = new Vue({
     el: '#chart2',
     data: {
         width: '100%',
-        height: '380',
-        type: 'pyramid',
+        height: '480',
+        type: 'doughnut2d',
         dataFormat: 'json',
         dataSource: null
     }
@@ -99,7 +99,7 @@ var app4 = new Vue({
     el: '#chart5',
     data: {
         width: '100%',
-        height: '380',
+        height: '480',
         type: 'angulargauge',
         dataFormat: 'json',
         dataSource: null

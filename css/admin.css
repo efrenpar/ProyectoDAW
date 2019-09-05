@@ -72,8 +72,6 @@ section{
 	
 }
 
-
-
 #sidebar ul li{
 	
 	padding:20px;
@@ -127,7 +125,9 @@ footer ul li{
 	display:inline-block;
 }
 
-
+.table-formato{
+	padding-top: 80px;
+  }
 
 .icon-twitter2, .icon-facebook2,.icon-instagram {
 	

@@ -1,4 +1,4 @@
---
+﻿--
 -- PostgreSQL database dump
 --
 
@@ -292,8 +292,8 @@ CREATE TABLE public.usuario (
     password character varying(20),
     nombre character varying(20),
     apellido character varying(20),
-    rol public.rol,
-    correo character varying(150)
+    correo character varying(150),
+    rol character varying(10)
 );
 
 
@@ -339,74 +339,6 @@ ALTER TABLE ONLY public.evento ALTER COLUMN id SET DEFAULT nextval('public.event
 --
 
 ALTER TABLE ONLY public.mensaje ALTER COLUMN id_mensaje SET DEFAULT nextval('public.mensaje_id_mensaje_seq'::regclass);
-
-
---
--- Data for Name: administrador; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.administrador (id_admin, registrodeactividad, ad_nickname) FROM stdin;
-\.
-
-
---
--- Data for Name: artista; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.artista (id, nombre, apellido, nacionalidad, fechadenacimiento, movimiento, campo, id_admin) FROM stdin;
-\.
-
-
---
--- Data for Name: cliente; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.cliente (id, ciudad, pais, cl_nickname) FROM stdin;
-\.
-
-
---
--- Data for Name: comentario; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.comentario (id_comentario, contenido, fecha, id_cliente, id_obras) FROM stdin;
-\.
-
-
---
--- Data for Name: evento; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.evento (id, titulo, fecha, descripcion, localidad, id_admin) FROM stdin;
-\.
-
-
---
--- Data for Name: mensaje; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.mensaje (id_mensaje, contenido, id_cliente) FROM stdin;
-\.
-
-
---
--- Data for Name: obra; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.obra (cod, nombre, tematica, precio, artista, alto, ancho, tipo) FROM stdin;
-\.
-
-
---
--- Data for Name: usuario; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.usuario (nickname, password, nombre, apellido, rol, correo) FROM stdin;
-admin	1234	efren	parra	admin	\N
-nando	123	nando	carabajo	cliente	efrenbarcevr@gmail.com
-hernan	123	hernan	carabali	cliente	aslcwecsdcsdc
-bryan	123	bryan	vasquez	cliente	sdfjvhsbd
-\.
 
 
 --

@@ -146,6 +146,8 @@ background-color: #e6e6e6
   font-weight: bold;
   text-align: center;
 }
+
+
 .d-flex ul li{
   display: inline-flex;
   padding: 0px 50px 0px 5px;

@@ -36,7 +36,7 @@ router.post('/email', function (req, res) {
       console.log('Email sent: ' + info.response);
     }
   });
-  res.redirect('https://project-gallery-daw.herokuapp.com:3000/contact');
+  res.redirect('htttp://localhost:3000/contact');
 });
 /*
 function getEmails() {
