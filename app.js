@@ -6,7 +6,11 @@ var router = express.Router();
 const body_parser = require('body-parser');
 artistas = require('./controllers/artistas');
 cuadros = require('./controllers/cuadros');
+cliente = require('./controllers/cliente');
 usuario = require('./controllers/usuario');
+usuarioModel = require('./models/usuario');
+var session = require('express-session')
+const cookieParser = require('cookie-parser')
 
 router.get('/',function(req,res){
     res.sendFile(path.join(__dirname+'/public/index.html'));
@@ -35,6 +39,8 @@ router.get('/reportes',function(req,res){
 router.get('/artistas',artistas.index);
 router.post('/cuadros/:idArtista',cuadros.find);
 router.get('/usuarios',usuario.index)
+router.post('/usuarios',usuario.authenticate)
+router.get('/cliente/:nickname',cliente.getCliente)
 
 router.get('/about',function(req,res){
     res.sendFile(path.join(__dirname+'/public/about.html'));
@@ -59,10 +65,20 @@ router.get('/login',function(req,res){
 });
 
 router.get('/perfil',function(req,res){
-    res.sendFile(path.join(__dirname+'/public/perfil.html'));
+    console.log("perfil "+res.locals.user)
+    if(res.locals.user){
+        res.sendFile(path.join(__dirname+'/public/perfil.html'));
+    }else{
+        res.redirect('/login')
+    }
 });
 
-app.use(cors())
+app.use(session({ secret: 'keyboard cat', cookie: { maxAge: 60000 }}));
+app.use(cookieParser())
+app.use(body_parser.json());
+app.use(body_parser.urlencoded({ extended: true }));
+app.use(usuario.getUser);
+app.use(cors());
 app.use('/css',express.static('css'));
 app.use('/images',express.static('images'));
 app.use('/js',express.static('js'));
@@ -70,8 +86,7 @@ app.use('/data',express.static('data'));
 app.use('/fonts',express.static('fonts'));
 app.use('/fonts',express.static('sass'));
 app.use('/',router);
-app.use(body_parser.json());
-app.use(body_parser.urlencoded({ extended: true }));
+
 
 app.use(function(req, res, next) {
     res.status(404).send("page not found");

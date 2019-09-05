@@ -15,7 +15,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: true
     },
-    rol_usuario: {
+    rol: {
       type: DataTypes.STRING,
       allowNull: true
     },
