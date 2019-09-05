@@ -7,6 +7,10 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       primaryKey: true
     },
+    password: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
     nombre: {
       type: DataTypes.STRING,
       allowNull: true
@@ -15,15 +19,11 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: true
     },
-    rol: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
     correo: {
       type: DataTypes.STRING,
       allowNull: true
     },
-    password: {
+    rol: {
       type: DataTypes.STRING,
       allowNull: true
     }
