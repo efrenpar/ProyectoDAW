@@ -27,7 +27,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.CHAR,
       allowNull: true,
       references: {
-        model: 'obras',
+        model: 'obra',
         key: 'cod'
       }
     }

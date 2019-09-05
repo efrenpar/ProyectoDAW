@@ -1,7 +1,7 @@
 /* jshint indent: 2 */
 
 module.exports = function(sequelize, DataTypes) {
-  return sequelize.define('obras', {
+  return sequelize.define('obra', {
     cod: {
       type: DataTypes.CHAR,
       allowNull: false,
@@ -21,7 +21,11 @@ module.exports = function(sequelize, DataTypes) {
     },
     artista: {
       type: DataTypes.INTEGER,
-      allowNull: true
+      allowNull: true,
+      references: {
+        model: 'artista',
+        key: 'id'
+      }
     },
     alto: {
       type: DataTypes.DOUBLE,
@@ -31,11 +35,11 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.DOUBLE,
       allowNull: true
     },
-    tipo_fiesta: {
+    tipo: {
       type: DataTypes.ENUM("escultura","pintura"),
       allowNull: true
     }
   }, {
-    tableName: 'obras'
+    tableName: 'obra'
   });
 };
