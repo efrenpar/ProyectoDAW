@@ -58,6 +58,10 @@ router.get('/login',function(req,res){
     res.sendFile(path.join(__dirname+'/public/loginForm.html'));
 });
 
+router.get('/perfil',function(req,res){
+    res.sendFile(path.join(__dirname+'/public/perfil.html'));
+});
+
 app.use(cors())
 app.use('/css',express.static('css'));
 app.use('/images',express.static('images'));

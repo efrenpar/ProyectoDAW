@@ -5,11 +5,12 @@ const vueApp = new Vue({
 		  input:{
 		  username: "",
 		  password: ""
-	  },
-	  usuarios = []
+		  },
+		usuarios : [],
+		isLogged: false
 	 }
   },
-  mounted{
+  mounted(){
 		axios
 		  .get('http://localhost:3000/usuarios')
 		  .then(response => (this.usuarios = response.data))
@@ -18,11 +19,12 @@ const vueApp = new Vue({
 	  login() {
 		  for(var i = 0; i<this.usuarios.length;i=i+1){
 			  if(this.input.username != "" && this.input.password != "") {
-        if(this.input.username == this.usuarios[i].split(" ")[0] && this.input.password == this.usuarios[i].split(" ")[1]) {
-			if(this.usuarios[i].split(" ")[2] == 'admin'){
-				window.location.href = 'localhost:3001'
+        if(this.input.username == this.usuarios[i]['nickname']&& this.input.password == this.usuarios[i]['password']) {
+			console.log(this.usuarios[i]['rol']);
+			if(this.usuarios[i]['rol'] == 'admin'){
+				window.location.href = 'http://localhost:3001/'
 			}else{
-				window.location.href = '/'
+				window.location.href = '/perfil'
 			}
         } else {
             console.log("The username and / or password is incorrect");
@@ -36,13 +38,3 @@ const vueApp = new Vue({
   }
 })
 
-/*
-if(this.input.username != "" && this.input.password != "") {
-        if(this.input.username == "manuella" && this.input.password == "1234") {
-            window.location.href = '/'
-        } else {
-            console.log("The username and / or password is incorrect");
-        }
-    } else {
-        console.log("A username and password must be present");
-    }*/

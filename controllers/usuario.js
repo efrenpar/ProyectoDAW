@@ -13,11 +13,11 @@ sequelize.authenticate().then(() => {
 module.exports = {
     index(req, res) {
         usuarios = sequelize.import("../models/usuario.js");
-        usuarios.findAll({ raw: true, attributes: ['nickname', 'password'] }).then(usuario => {
+        usuarios.findAll({ raw: true, attributes: ['nickname', 'password','rol'] }).then(usuario => {
             var list=[];
             for (var i = 0; i < usuario.length; i++) {
-                var cadena = usuario[i].nickname + " " + usuario[i].password +" "+ usuario[i].rol_usuario;
-                list.push(cadena);
+                
+                list.push(usuario[i]);
 				
             }
 			console.log("no entramos");
