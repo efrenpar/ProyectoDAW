@@ -10,7 +10,7 @@ const vueApp = new Vue({
         cliente = atob(document.cookie.split(" ")[1].split("=")[1])
         axios
         .get('http://localhost:3000/cliente/'+cliente)
-        .then(response => (console.log(this.info)))
+        .then(response => (this.info = response.data))
         console.log(this.info)
 	}
 })

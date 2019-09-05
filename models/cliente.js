@@ -23,6 +23,8 @@ module.exports = function(sequelize, DataTypes) {
         key: 'nickname'
       }
     }
+  },{
+	  timestamps: false
   }, {
     tableName: 'cliente'
   });
