@@ -5,7 +5,7 @@ const path = require("path");
 var router = express.Router();
 const body_parser = require('body-parser');
 artistas = require('./controllers/artistas');
-cuadros = require('./controllers/cuadros');
+//cuadros = require('./controllers/cuadros');
 cliente = require('./controllers/cliente');
 usuario = require('./controllers/usuario');
 usuarioModel = require('./models/usuario');
@@ -36,11 +36,12 @@ router.get('/reportes',function(req,res){
     res.sendFile(path.join(__dirname+'/public/reportes.html'));
 });
 
-router.get('/artistas',artistas.index);
-router.post('/cuadros/:idArtista',cuadros.find);
+//router.get('/artistas',artistas.index);
+//router.post('/cuadros/:idArtista',cuadros.find);
 router.get('/usuarios',usuario.index)
 router.post('/usuarios',usuario.authenticate)
 router.get('/cliente/:nickname',cliente.getCliente)
+router.post('/cliente',cliente.setCliente)
 
 router.get('/about',function(req,res){
     res.sendFile(path.join(__dirname+'/public/about.html'));
@@ -62,6 +63,10 @@ router.get('/contact',function(req,res){
 
 router.get('/login',function(req,res){
     res.sendFile(path.join(__dirname+'/public/loginForm.html'));
+});
+
+router.get('/signUp',function(req,res){
+    res.sendFile(path.join(__dirname+'/public/signUp.html'));
 });
 
 router.get('/perfil',function(req,res){

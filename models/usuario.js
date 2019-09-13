@@ -27,7 +27,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: true
     }
-  }, {
+  },{timestamps: false}, {
     tableName: 'usuario'
   });
 };

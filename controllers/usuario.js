@@ -70,5 +70,14 @@ module.exports = {
             })
         }
         
+    },
+    getUserByName(req,res){
+        idUser = Buffer.from(idUser,'base64').toString('ascii')
+        usuarios = sequelize.import("../models/usuario.js");
+        usuarios.findOne({
+            where:{
+                nickname: idUser
+            }
+        })
     }
 }

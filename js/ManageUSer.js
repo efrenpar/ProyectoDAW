@@ -15,18 +15,18 @@ function getCookie(cname) {
   }
 
 const vueApp = new Vue({
-	el: '#vapp',
+	el: '#logger',
 	data() {
 		return {
-            clientes:[],
-			info: "",
+			user:atob(getCookie("user"))
 		}
-	},
-	mounted(){
-		cliente = atob(getCookie("user"))
-        axios
-        .get('http://localhost:3000/cliente/'+cliente)
-        .then(response => (this.info = response.data))
-	}
+    },
+    methods:{
+        logOut: function(event){
+            console.log("se ejecuto");
+            document.cookie = "user=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            window.location.href = '/'
+        }
+    }
 })
 

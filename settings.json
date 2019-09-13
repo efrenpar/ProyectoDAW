@@ -1078,5 +1078,221 @@
         "editview": {
             "readonly": false
         }
+    },
+    "clientes": {
+        "slug": "clientes",
+        "table": {
+            "name": "clientes",
+            "pk": "id",
+            "verbose": "clientes"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "integer",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "ciudad",
+                "verbose": "ciudad",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "pais",
+                "verbose": "pais",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "cl_nickname",
+                "verbose": "cl_nickname",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "descripcion",
+                "verbose": "descripcion",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(200)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "usuarios": {
+        "slug": "usuarios",
+        "table": {
+            "name": "usuarios",
+            "pk": "nickname",
+            "verbose": "usuarios"
+        },
+        "columns": [
+            {
+                "name": "nickname",
+                "verbose": "nickname",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "password",
+                "verbose": "password",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "nombre",
+                "verbose": "nombre",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "apellido",
+                "verbose": "apellido",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "correo",
+                "verbose": "correo",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(150)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "rol",
+                "verbose": "rol",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(10)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
     }
 }

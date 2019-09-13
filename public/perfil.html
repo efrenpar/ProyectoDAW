@@ -13,8 +13,8 @@
                 <div class="media align-items-end profile-header">
                     <div class="profile mr-3"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg" alt="..." width="130" class="rounded mb-2 img-thumbnail"><a href="#" class="btn btn-dark btn-sm btn-block">Edit profile</a></div>
                     <div class="media-body mb-5 text-white">
-                        <h4 class="mt-0 mb-0">{{info}}</h4>
-                        <p class="small mb-4"> <i class="fa fa-map-marker mr-2"></i>San Farcisco</p>
+                        <h4 class="mt-0 mb-0">{{info[1].nombre }} {{info[1].apellido}}</h4>
+                        <p class="small mb-4"> <i class="fa fa-map-marker mr-2"></i>{{info[0].ciudad}}</p>
                     </div>
                 </div>
             </div>
@@ -32,14 +32,14 @@
 
             <div class="py-4 px-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                    <h5 class="mb-0">Recent photos</h5><a href="http://localhost:3000/" class="btn btn-dark btn-sm btn-block">Regresar a Galeria</a>
+                    <a href="http://localhost:3000/" class="btn btn-dark btn-sm btn-block">Regresar a Galeria</a>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 "><img src="https://res.cloudinary.com/mhmd/image/upload/v1556294928/nicole-honeywill-546848-unsplash_ymprvp.jpg" alt="" class="img-fluid rounded shadow-sm"></div>
-                    <div class="col-lg-6 "><img src="https://res.cloudinary.com/mhmd/image/upload/v1556294927/dose-juice-1184444-unsplash_bmbutn.jpg" alt="" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-lg-6 "><h5> Nacionalidad </h5> {{info[0].pais}}</div>
+                    <div class="col-lg-6 "><h5> Correo electronico </h5> {{info[1].correo}}</div>
                 </div>
 				<div class = "row">
-					<div class="col-lg-6 "><img src="https://res.cloudinary.com/mhmd/image/upload/v1556294926/cody-davis-253925-unsplash_hsetv7.jpg" alt="" class="img-fluid rounded shadow-sm"></div>
+					<div class="col-lg-6 "><h5> Descripcion </h5>{{info[0].descripcion}}</div>
                     <div class="col-lg-6 "><img src="https://res.cloudinary.com/mhmd/image/upload/v1556294928/tim-foster-734470-unsplash_xqde00.jpg" alt="" class="img-fluid rounded shadow-sm"></div>
 				</div>
                 <div class="py-4">

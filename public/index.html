@@ -76,14 +76,15 @@
 		<aside id="colorlib-aside"  class="border js-fullheight" >
 			<h1 id="colorlib-logo"><a href="/"><img src="images/logo3.png"> </a></h1>
 			<nav id="colorlib-main-menu">
-				<ul >
+				<ul id = "logger" >
 					<li class="colorlib-active"  > 
 					<a  href="/"  >Inicio</a></li>
 					<li ><a href="/work" data-step="1" data-intro="En esta sección, podrá conocer un poco de los artistas y de las obras que mostramos en nuestra galería"  data-position='left' >Artistas</a></li>
 					<li ><a href="/blog" data-step="2" data-intro="Aquí podrás estar informado de los eventos más recientes que organizamos." >Eventos</a></li>
 					<li ><a href="/about" data-step="3" data-intro="Si estas interesado en conocernos más, te gustará entrar aquí">Nosotros</a></li>
 					<li><a href="/contact" data-step="4" data-intro="Por último, podrás decirnos tus inquitudes">Contacto</a></li>
-					<li id = "logger"><a href= "/login">Log in</a><a href = "http://localhost:3001/">Sign up</a></li>
+					<li  v-if= "user" ><a href= "/perfil">@{{ user }}</a><a v-on:click = "logOut">Log out</a></li>
+					<li  v-else= "user" ><a href= "/login">Log in</a><a href = "/signUp">Sign up</a></li>
 				</ul>
 			</nav>
 
@@ -190,7 +191,13 @@
 	<script src = "js/intro.js"></script>
 	<script src = "js/intro.min.js"></script>
 
-
+	<!--Vue -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://unpkg.com/vuex"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src = "../js/ManageUSer.js" type = "text/javascript"></script>
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue-cookies@1.5.12/vue-cookies.js"></script>
 
 </body>
 
