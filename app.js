@@ -5,12 +5,15 @@ const path = require("path");
 var router = express.Router();
 const body_parser = require('body-parser');
 artistas = require('./controllers/artistas');
+opiniones = require('./controllers/opinion')
 //cuadros = require('./controllers/cuadros');
 cliente = require('./controllers/cliente');
 usuario = require('./controllers/usuario');
 usuarioModel = require('./models/usuario');
 var session = require('express-session')
 const cookieParser = require('cookie-parser')
+var server = require('http').Server(app);
+var io = require('socket.io')(server);
 
 router.get('/',function(req,res){
     res.sendFile(path.join(__dirname+'/public/index.html'));
@@ -36,12 +39,20 @@ router.get('/reportes',function(req,res){
     res.sendFile(path.join(__dirname+'/public/reportes.html'));
 });
 
-//router.get('/artistas',artistas.index);
+router.get('/artistas',artistas.index);
+router.get('/artistas/:nombre',artistas.getArtista);
 //router.post('/cuadros/:idArtista',cuadros.find);
 router.get('/usuarios',usuario.index)
 router.post('/usuarios',usuario.authenticate)
 router.get('/cliente/:nickname',cliente.getCliente)
 router.post('/cliente',cliente.setCliente)
+
+
+//opiniones
+//se obtiene opinion por id
+router.get('/opinion/:artista',opiniones.getOpinion)
+router.post('/opinion',opiniones.setOpinion)
+router.delete('/opinion/:id',opiniones.deleteOpinion)
 
 router.get('/about',function(req,res){
     res.sendFile(path.join(__dirname+'/public/about.html'));
@@ -78,6 +89,8 @@ router.get('/perfil',function(req,res){
     }
 });
 
+
+
 app.use(session({ secret: 'keyboard cat', cookie: { maxAge: 60000 }}));
 app.use(cookieParser())
 app.use(body_parser.json());
@@ -101,7 +114,16 @@ app.use(function(req, res, next) {
 
 const host = '0.0.0.0';
 const port = process.env.PORT || 3000;  
+
+
   
-app.listen(port, host, function() {
+server.listen(port, host, function() {
   console.log("Server started.......");
+});
+
+io.on('connection',function(socket){
+    socket.on("enviarOpinion",(result)=> {io.emit("enviarOpinion",result),console.log("SE ENVIO UN MENSAJE"+result.contenido)});
+
+    socket.on("eliminarOpinion",(result)=>{io.emit("eliminarOpinion",result),console.log("SE ENVIO UN ID DE ELIMINACION"+result)});
+    console.log('alguien se conecto');
 });

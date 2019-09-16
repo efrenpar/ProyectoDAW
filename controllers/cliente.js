@@ -5,7 +5,7 @@ var sequelize = new Sequelize('postgres://postgres:root@localhost:5432/galeria',
 
 module.exports = {
     getCliente(req, res, next) {
-        console.log("se recibe el parametro "+req.params.nickname)
+        
         var infoCliente = [];
         clientes = sequelize.import("../models/cliente.js");
         usuarios = sequelize.import("../models/usuario.js");
@@ -27,7 +27,7 @@ module.exports = {
         })
     },
     setCliente(req,res){
-        console.log(req.body);
+        
         usuarios = sequelize.import("../models/usuario.js");
         clientes = sequelize.import("../models/cliente.js");
         usuarios.create({

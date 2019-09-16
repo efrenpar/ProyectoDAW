@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-var sequelize = new Sequelize('postgres://postgres:admin@localhost:5432/galeria', {
+var sequelize = new Sequelize('postgres://postgres:root@localhost:5432/galeria', {
     dialect: 'postgres'
 });
 
@@ -17,4 +17,17 @@ module.exports = {
             res.send(res, error);
         });
     },
+    getArtista(req,res){
+        artistas = sequelize.import("../models/artista.js");
+        artistas.findOne({
+            where: {
+                nombre:req.params.nombre
+            }
+        }).then(artista => {
+            res.send(artista);
+        }).catch(function(error){
+            res.send(res.error);
+        })
+
+    }
 }

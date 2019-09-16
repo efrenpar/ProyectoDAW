@@ -39,7 +39,7 @@ module.exports = function(sequelize, DataTypes) {
         key: 'id_admin'
       }
     }
-  }, {
+  }, {timestamps: false},{
     tableName: 'artista'
   });
 };

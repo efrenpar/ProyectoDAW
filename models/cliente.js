@@ -18,7 +18,7 @@ module.exports = function(sequelize, DataTypes) {
     cl_nickname: {
       type: DataTypes.STRING,
       allowNull: true,
-      eferences: {
+      references: {
         model: 'usuario',
         key: 'nickname'
       }

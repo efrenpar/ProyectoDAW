@@ -129,7 +129,7 @@
 										<p class="icon">
 											<span class="mouse"><a v-on:click="openModal(post.autor)"><i class="icon-eye"></i>
 													Obras</a></span>
-											<span class="mouse"><a href="#"><i class="icon-heart"></i>100</a></span>
+											<span class="mouse"><a v-on:click="comentarios($event,post.autor)"><i class="icon-heart"></i>100</a></span>
 										</p>
 									</div>
 								</div>
@@ -200,6 +200,10 @@
 		<!-- Counters -->
 		<script src="js/jquery.countTo.js"></script>
 
+		<!--socket.io-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js" integrity="sha256-i2Orhi397HWPn93rsCUTW8HBoso65vY/VNTllm9Kuqo=" crossorigin="anonymous"></script>
+	
+
 		<!-- MAIN JS -->
 		<script src="js/main.js"></script>
 		<script src="js/login.js"></script>
@@ -213,7 +217,8 @@
 <script src = "../js/ManageUSer.js" type = "text/javascript"></script>
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/vue-cookies@1.5.12/vue-cookies.js"></script>
-	</div>
+
+  </div>
 
 </body>
 

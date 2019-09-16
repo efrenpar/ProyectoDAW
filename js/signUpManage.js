@@ -14,7 +14,7 @@ const vueApp = new Vue({
     methods:{
         registrar(){
             
-            console.log(this.nombre);
+            
             if(this.nombre!="" && this.apellido!="" && this.email!="" && this.password!="" && this.username!= ""){
                     axios.post('http://localhost:3000/cliente',{
                         nickname: this.username,
@@ -24,7 +24,7 @@ const vueApp = new Vue({
                         correo:this.email,
                         rol:'cliente',
                         id:10
-                    }).then(result => {console.log(result);window.location.href = '/'},300).catch(err=>{
+                    }).then(result => {window.location.href = '/'},300).catch(err=>{
                         console.log(err)
                     })
             }
